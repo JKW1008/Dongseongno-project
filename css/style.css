@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+}
+.header_inner {
+  width: 90%;
+  height: 90px;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+.header_inner img {
+  width: 150px;
+  height: 80px;
+}
+.header_inner nav {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
