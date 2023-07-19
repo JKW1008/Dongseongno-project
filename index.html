@@ -3,9 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/headerStyle.css" />
+    <link rel="stylesheet" href="./css/footerStyle.css" />
+    <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
+    <script src="./js/toggle.js"></script>
     <title>Document</title>
   </head>
+
   <body>
-    first test
+    <header>
+      <div class="header_inner">
+        <img src="./image/logo_black.png" alt="동성로랑 logo" />
+
+        <nav class="menu_wrapper">
+          <ui>
+            <li>
+              <div class="main_menu_title">
+                여행지
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+              </div>
+              <ul class="sub_menu">
+                <li>관광지</li>
+                <li>놀거리</li>
+                <li>음식</li>
+                <li>쇼핑</li>
+                <li>숙박</li>
+              </ul>
+            </li>
+          </ui>
+          <ui>
+            <li>
+              <div class="main_menu_title">
+                축제와행사
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+              </div>
+            </li>
+          </ui>
+          <ui>
+            <li>
+              <div class="main_menu_title">
+                나의여행
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+              </div>
+              <ul class="sub_menu">
+                <li>찜한 여행</li>
+                <li>나의 리뷰</li>
+                <li>나의 질문</li>
+              </ul>
+            </li>
+          </ui>
+          <ui>
+            <li>
+              <div class="main_menu_title">
+                커뮤니티
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+              </div>
+              <ul class="sub_menu">
+                <li>동성로 지식IN</li>
+                <li>고객센터</li>
+              </ul>
+            </li>
+          </ui>
+        </nav>
+
+        <div class="right_nav">
+          <span>날씨</span>
+          <button>로그인</button>
+          <button>회원가입</button>
+        </div>
+      </div>
+    </header>
+
+    <footer>
+      <div class="footer_inner">
+        <div>
+          <p class="copyright">
+            <img src="./image/logo_white.png" alt="footer_logo" />
+            | 개인정보처리방침 | 이용약관
+          </p>
+          <p class="text">
+            (주)동성로랑 | 대표자:임지찬 | 사업자번호:499-81-00612 <br />
+            전화번호:070-4948-1181 | 주소:대구 중구 용덕동 12
+          </p>
+          <p class="en">©DONSEUONLORANG. ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-solid fa-n"></i>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
