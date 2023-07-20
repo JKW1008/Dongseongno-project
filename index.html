@@ -1,231 +1,224 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carousel</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>carousel</title>
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/main_carousel.css" />
+    <link rel="stylesheet" href="./css/first_carousel.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
-  <link rel="stylesheet" href="./css/main_carousel.css" />
-  <link rel="stylesheet" href="./css/first_carousel.css" />
-</head>
+  <body>
+    <header>
+      <div class="header_inner">
+        <img src="./img/logo_black.png" alt="동성로랑 logo" />
 
-<body>
-  <header>
-    <div class="header_inner">
-      <img src="./img/logo_black.png" alt="동성로랑 logo" />
+        <nav class="menu_wrapper">
+          <ui>
+            <li>
+              <div class="main_menu_title">
+                여행지
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+                <ul class="sub_menu">
+                  <li>관광지</li>
+                  <li>놀거리</li>
+                  <li>음식</li>
+                  <li>쇼핑</li>
+                  <li>숙박</li>
+                </ul>
+              </div>
+            </li>
+          </ui>
+          <ui>
+            <li>
+              <div>축제와행사</div>
+            </li>
+          </ui>
+          <ui>
+            <li>
+              <div class="main_menu_title">
+                나의여행
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+              </div>
+              <ul class="sub_menu">
+                <li>찜한 여행</li>
+                <li>나의 리뷰</li>
+                <li>나의 질문</li>
+              </ul>
+            </li>
+          </ui>
+          <ui>
+            <li>
+              <div class="main_menu_title">
+                커뮤니티
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+              </div>
+              <ul class="sub_menu">
+                <li>동성로 지식IN</li>
+                <li>고객센터</li>
+              </ul>
+            </li>
+          </ui>
+        </nav>
 
-      <nav class="menu_wrapper">
-        <ui>
-          <li>
-            <div class="main_menu_title">
-              여행지
-              <i class="fa-sharp fa-solid fa-caret-down"></i>
-            </div>
-            <ul class="sub_menu">
-              <li>관광지</li>
-              <li>놀거리</li>
-              <li>음식</li>
-              <li>쇼핑</li>
-              <li>숙박</li>
-            </ul>
-          </li>
-        </ui>
-        <ui>
-          <li>
-            <div class="main_menu_title">
-              축제와행사
-              <i class="fa-sharp fa-solid fa-caret-down"></i>
-            </div>
-          </li>
-        </ui>
-        <ui>
-          <li>
-            <div class="main_menu_title">
-              나의여행
-              <i class="fa-sharp fa-solid fa-caret-down"></i>
-            </div>
-            <ul class="sub_menu">
-              <li>찜한 여행</li>
-              <li>나의 리뷰</li>
-              <li>나의 질문</li>
-            </ul>
-          </li>
-        </ui>
-        <ui>
-          <li>
-            <div class="main_menu_title">
-              커뮤니티
-              <i class="fa-sharp fa-solid fa-caret-down"></i>
-            </div>
-            <ul class="sub_menu">
-              <li>동성로 지식IN</li>
-              <li>고객센터</li>
-            </ul>
-          </li>
-        </ui>
-      </nav>
-
-      <div class="right_nav">
-        <span>날씨</span>
-        <button>로그인</button>
-        <button>회원가입</button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="main_carousel">
-      <!-- Swiper -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./img/Frame1.png" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/Frame2.png" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/Frame3.png" />
-          </div>
-        </div>
-        <div class="autoplay-progress">
-          <svg viewBox="0 0 48 48">
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span></span>
+        <div class="right_nav">
+          <span>날씨</span>
+          <button>로그인</button>
+          <button>회원가입</button>
         </div>
       </div>
+    </header>
 
-      <div class="slide_text">
-        <h4>대구 광역시 문화와 쇼핑의 중심지</h4>
-        <h2>지금 여기는 동성로</h2>
-      </div>
-    </section>
-
-    <section class="first_carousel">
-      <div></div>
-      <div class="wrapper">
-        <div class="main_text">
-          특별한 동성로
-          <span>여행지</span>
-        </div>
-
-        <div class="swiper first_swiper">
+    <main>
+      <section class="main_carousel">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="text_box">
-                <div>
-                  <button>추천</button>
-                  <div>
-                    <div class="text_box_main_text">하이마트 음악감상실</div>
-                    <div class="text_box_location">
-                      <img src="./img/location.png" alt="location" />
-                      <p>대구 중구 동성로6길 45</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="text_box_description">
-                  <p>60년 전통을 가진 음악감상실이 대구 동성로에 있다는 사실, 알고계시나요?</p>
-                  <p>7천여장의 LP레코드, 다권, 오르간 등 아날로그 감성이 가득한 하이마트에서, 사장님의 추천 음악을 웅장한 사운드로 마음껏 들어보세요. 레트로 공간에서 따뜻한 차를 마시며,
-                    독특한
-                    분위기에 취한 채로 시간을 보내실 수 있습니다.</p>
-                </div>
-              </div>
-              <img src="./img/first_carousel1.png" alt="first_carousel1" />
+              <img src="./img/Frame1.png" />
             </div>
             <div class="swiper-slide">
-              <div class="text_box">
-                <div>
-                  <button>추천</button>
-                  <div>
-                    <div class="text_box_main_text">스파크 랜드</div>
-                    <div class="text_box_location">
-                      <img src="./img/location.png" alt="location" />
-                      <p>대구 중구 동성로6길 45</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="text_box_description">
-                  <p>60년 전통을 가진 음악감상실이 대구 동성로에 있다는 사실, 알고계시나요?</p>
-                  <p>7천여장의 LP레코드, 다권, 오르간 등 아날로그 감성이 가득한 하이마트에서, 사장님의 추천 음악을 웅장한 사운드로 마음껏 들어보세요. 레트로 공간에서 따뜻한 차를 마시며,
-                    독특한
-                    분위기에 취한 채로 시간을 보내실 수 있습니다.</p>
-                </div>
-              </div>
-              <img src="./img/first_carousel2.png" alt="first_carousel1" />
+              <img src="./img/Frame2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Frame3.png" />
             </div>
           </div>
-          <div class="swiper_button">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <section class="second_carousel">
-
-      <div class="main_text">
-        동성로에서 즐기자!
-        <span>다양한 축제</span>
-      </div>
-      <!-- Swiper -->
-      <div class="swiper second-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
+        <div class="slide_text">
+          <h4>대구 광역시 문화와 쇼핑의 중심지</h4>
+          <h2>지금 여기는 동성로</h2>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- <div class="swiper-pagination"></div> -->
+      </section>
+
+      <section class="first_carousel">
+        <div></div>
+        <div class="wrapper">
+          <div class="main_text">
+            특별한 동성로
+            <span>여행지</span>
+          </div>
+
+          <div class="swiper first_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="text_box">
+                  <div>
+                    <button>추천</button>
+                    <div>
+                      <div class="text_box_main_text">하이마트 음악감상실</div>
+                      <div class="text_box_location">
+                        <img src="./img/location.png" alt="location" />
+                        <p>대구 중구 동성로6길 45</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text_box_description">
+                    <p>60년 전통을 가진 음악감상실이 대구 동성로에 있다는 사실, 알고계시나요?</p>
+                    <p>
+                      7천여장의 LP레코드, 다권, 오르간 등 아날로그 감성이 가득한 하이마트에서, 사장님의 추천 음악을 웅장한 사운드로 마음껏 들어보세요. 레트로
+                      공간에서 따뜻한 차를 마시며, 독특한 분위기에 취한 채로 시간을 보내실 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <img src="./img/first_carousel1.png" alt="first_carousel1" />
+              </div>
+              <div class="swiper-slide">
+                <div class="text_box">
+                  <div>
+                    <button>추천</button>
+                    <div>
+                      <div class="text_box_main_text">스파크 랜드</div>
+                      <div class="text_box_location">
+                        <img src="./img/location.png" alt="location" />
+                        <p>대구 중구 동성로6길 45</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text_box_description">
+                    <p>60년 전통을 가진 음악감상실이 대구 동성로에 있다는 사실, 알고계시나요?</p>
+                    <p>
+                      7천여장의 LP레코드, 다권, 오르간 등 아날로그 감성이 가득한 하이마트에서, 사장님의 추천 음악을 웅장한 사운드로 마음껏 들어보세요. 레트로
+                      공간에서 따뜻한 차를 마시며, 독특한 분위기에 취한 채로 시간을 보내실 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <img src="./img/first_carousel2.png" alt="first_carousel1" />
+              </div>
+            </div>
+            <div class="swiper_button">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="second_carousel">
+        <div class="main_text">
+          동성로에서 즐기자!
+          <span>다양한 축제</span>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper second-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_inner">
+        <div>
+          <p class="copyright">
+            <img src="./img/logo_white.png" alt="footer_logo" />
+            | 개인정보처리방침 | 이용약관
+          </p>
+          <p class="text">
+            (주)동성로랑 | 대표자:정강우 | 사업자번호:499-81-00612 <br />
+            전화번호:070-4948-1181 | 주소:대구 중구 용덕동 12
+          </p>
+          <p class="en">©DONSEUONLORANG. ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-solid fa-n"></i>
+        </div>
       </div>
+    </footer>
 
-    </section>
-  </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <footer>
-    <div class="footer_inner">
-      <div>
-        <p class="copyright">
-          <img src="./img/logo_white.png" alt="footer_logo" />
-          | 개인정보처리방침 | 이용약관
-        </p>
-        <p class="text">
-          (주)동성로랑 | 대표자:정강우 | 사업자번호:499-81-00612 <br />
-          전화번호:070-4948-1181 | 주소:대구 중구 용덕동 12
-        </p>
-        <p class="en">©DONSEUONLORANG. ALL RIGHTS RESERVED</p>
-      </div>
-      <div class="icon">
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-solid fa-n"></i>
-      </div>
-    </div>
-  </footer>
+    <!--  -->
+    <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
+    <script src="./js/toggle.js"></script>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-  <!--  -->
-  <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
-  <script src="./js/toggle.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script src="./js/first_carousel.js"></script>
-  <script src="./js/second_carousel.js"></script>
-  <script src="./js/main_carousel.js"></script>
-
-</body>
-
+    <!-- Initialize Swiper -->
+    <script src="./js/first_carousel.js"></script>
+    <script src="./js/second_carousel.js"></script>
+    <script src="./js/main_carousel.js"></script>
+  </body>
 </html>
