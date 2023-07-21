@@ -72,20 +72,20 @@ header {
   font-size: 0.9375vw;
 }
 
-.main_menu_title {
+.menu_wrapper .main_menu_title {
   display: inline-block;
   position: relative;
   align-items: center;
   width: 100%;
 }
-.main_menu_title:hover .sub_menu {
+.menu_wrapper .main_menu_title:hover .sub_menu {
   display: block;
 }
 .main {
   margin: 0 40px;
 }
 
-.main_menu_title:hover {
+.menu_wrapper .main_menu_title:hover {
   cursor: pointer;
 }
 
@@ -103,6 +103,7 @@ header {
   line-height: 30px;
   border-radius: 6px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: display 5s;
 }
 .sub_menu li:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -112,9 +113,10 @@ header {
 
 /* 헤더 태블릿 버전 */
 @media screen and (max-width: 768px) {
-  nav .main {
+  .menu_wrapper .main {
     display: none;
   }
+
   /* 태블릿 토글 */
   .nav_toggle {
     margin-top: 30px;
@@ -189,6 +191,7 @@ header {
     font-size: 22px;
     display: inline-block;
     margin: 20px;
+    cursor: pointer;
   }
   .sideAccordion_title span:active + i {
     transform: rotate(180deg);
