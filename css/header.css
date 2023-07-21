@@ -52,7 +52,7 @@ header {
 }
 
 .menu_wrapper {
-  /* font-size: 0.9375vw; */
+  font-size: 0.9375vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@ header {
 }
 
 .right_nav {
-  /* font-size: 0.9375vw; */
+  font-size: 0.9375vw;
   height: 90px;
   display: flex;
   align-items: center;
@@ -69,10 +69,15 @@ header {
 
 .right_nav_icon {
   margin-right: 20px;
-  /* font-size: 0.9375vw; */
+  font-size: 0.9375vw;
 }
 .right_nav_icon button {
   margin-left: 20px;
+  cursor: pointer;
+}
+
+.right_nav_icon img {
+  display: none;
 }
 
 .menu_wrapper .main_menu_title {
@@ -100,13 +105,16 @@ header {
   text-align: start;
   /* right: -120px; */
   background-color: white;
-  padding: 20px;
+  padding: 12px 8px;
   margin-top: 10px;
   white-space: nowrap;
   line-height: 30px;
   border-radius: 6px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  transition: display 5s;
+}
+.sub_menu li {
+  padding: 5px 8px;
+  font-weight: 300;
 }
 .sub_menu li:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -118,6 +126,19 @@ header {
 @media screen and (max-width: 1024px) {
   .menu_wrapper .main {
     display: none;
+  }
+  .right_nav_icon {
+    display: flex;
+  }
+
+  .right_nav_icon button {
+    display: none;
+  }
+  .right_nav_icon img {
+    display: block;
+    margin: 0 10px 0 30px;
+    width: 20px;
+    height: 20px;
   }
 
   /* 태블릿 토글 */
