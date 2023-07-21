@@ -52,15 +52,17 @@ header {
 }
 
 .menu_wrapper {
-  font-size: 0.9375vw;
+  /* font-size: 0.9375vw; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90px;
 }
-
+.main span {
+  font-size: 1.18rem;
+}
 .right_nav {
-  font-size: 0.9375vw;
+  /* font-size: 0.9375vw; */
   height: 90px;
   display: flex;
   align-items: center;
@@ -69,7 +71,7 @@ header {
 
 .right_nav_icon {
   margin-right: 20px;
-  font-size: 0.9375vw;
+  /* font-size: 0.9375vw; */
 }
 .right_nav_icon button {
   margin-left: 20px;
@@ -90,11 +92,10 @@ header {
   display: block;
 }
 .main {
-  margin: 0 40px;
-}
-
-.menu_wrapper .main_menu_title:hover {
   cursor: pointer;
+  margin: 0 40px;
+  position: relative;
+  display: inline-block;
 }
 
 .sub_menu {
@@ -111,15 +112,24 @@ header {
   line-height: 30px;
   border-radius: 6px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  top: 40px;
 }
 .sub_menu li {
   padding: 5px 8px;
   font-weight: 300;
 }
-.sub_menu li:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  /* padding: 0 0 0 5px; */
+.sub_menu li::before {
+  content: "•";
+  margin-right: 10px;
+}
+
+.sub_menu li:hover::before {
+  content: "✔";
+  color: red;
+}
+.main_menu_title > span {
+  display: inline-block;
+  padding: 20px;
 }
 
 /* 헤더 태블릿 버전 */
@@ -211,19 +221,29 @@ header {
   .sideAccordion_menu.show {
     display: block;
   }
+  .main {
+    border-bottom: 1px solid #eee;
+  }
   .main span {
     font-size: 22px;
     display: inline-block;
     margin: 20px;
     cursor: pointer;
   }
-  .sideAccordion_title span:active + i {
-    transform: rotate(180deg);
-  }
+
   .sideAccordion_menu li {
-    list-style: disc;
+    padding: 8px 10px;
     margin-left: 50px;
     line-height: 30px;
+    font-size: 16px;
+  }
+  .sideAccordion_menu li::before {
+    content: "•";
+    margin-right: 10px;
+  }
+  .sideAccordion_menu li:hover::before {
+    content: "✔";
+    color: red;
   }
 }
 
