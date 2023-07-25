@@ -14,17 +14,21 @@ var swiper = new Swiper(".second-swiper", {
     el: ".swiper-pagination",
   },
   breakpoints: {
-    380: {
-      slidesPerView: 2,
-      spaceBetween: 40,
+    100: {
+      slidesPerView: 1,
+      spaceBetween: 0,
     },
-    768: {
+    430: {
       slidesPerView: 2,
       spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
     },
     1024: {
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 96,
     },
   },
   mousewheel: false,

@@ -5,7 +5,7 @@ footer {
 }
 
 .footer_inner {
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
   color: #bbb;
   display: flex;
@@ -22,6 +22,7 @@ footer {
 
 .text {
   margin-bottom: 30px;
+  line-height: 30px;
 }
 
 .copyright img {
@@ -34,4 +35,29 @@ footer {
 
 .icon {
   font-size: 2em;
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 380px;
+  }
+  .footer_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .copyright {
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .icon {
+    padding-top: 60px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+  }
 }

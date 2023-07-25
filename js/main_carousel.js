@@ -1,5 +1,4 @@
 
-const colors = ['#f54747', '#00AB24', '#D35F85'];
 const root = document.documentElement;
 
 const progressCircle = document.querySelector(".autoplay-progress svg");
@@ -21,8 +20,30 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
-swiper.on('slideChange', function () {
-  const realIndex = swiper.realIndex;
-  const color = colors[realIndex];
-  root.style.setProperty('--swiper-theme-color', color);
-});
+function setImgSrc() {
+  if (window.matchMedia("(max-width: 430px)").matches) {
+    // The view width is less than or equal to 430 pixels
+    const images = document.querySelectorAll(".main_carousel .swiper-slide img");
+    images.forEach((img, index) => {
+      img.src = `./img/Frame${index + 7}.png`;
+    });
+  } else if (window.matchMedia("(max-width: 768px)").matches) {
+    // The view width is less than or equal to 768 pixels
+    const images = document.querySelectorAll(".main_carousel .swiper-slide img");
+    images.forEach((img, index) => {
+      img.src = `./img/Frame${index + 4}.png`;
+    });
+  } else if (window.matchMedia("(min-width: 769px)").matches) {
+    // The view width is greater than 768 pixels
+    const images = document.querySelectorAll(".main_carousel .swiper-slide img");
+    images.forEach((img, index) => {
+      img.src = `./img/Frame${index + 1}.png`;
+    });
+  }
+}
+
+// Call the function when the webpage is first loaded
+setImgSrc();
+
+// Call the function when the resize event is triggered
+window.addEventListener("resize", setImgSrc);
