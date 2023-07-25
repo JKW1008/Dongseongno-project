@@ -93,7 +93,7 @@ header {
 }
 .main {
   cursor: pointer;
-  margin: 0 40px;
+  margin: 0 25px;
   position: relative;
   display: inline-block;
 }
@@ -104,7 +104,7 @@ header {
   overflow: auto;
   width: 100%;
   text-align: start;
-  /* right: -120px; */
+  font-size: 1rem;
   background-color: white;
   padding: 12px 8px;
   margin-top: 10px;
@@ -133,7 +133,7 @@ header {
 }
 
 /* 헤더 태블릿 버전 */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1024px) {
   .menu_wrapper .main {
     display: none;
   }
