@@ -133,7 +133,7 @@ header {
 }
 
 /* 헤더 태블릿 버전 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
   .menu_wrapper .main {
     display: none;
   }
