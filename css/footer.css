@@ -61,3 +61,19 @@ footer {
     gap: 30px;
   }
 }
+
+@media screen and (max-width: 430px) {
+  footer {
+    height: 420px;
+  }
+  .copyright {
+    margin-top: 10px;
+  }
+  .text {
+    font-size: 14px;
+  }
+
+  .icon {
+    padding-top: 55px;
+  }
+}
