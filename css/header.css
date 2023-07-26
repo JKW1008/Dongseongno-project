@@ -136,6 +136,7 @@ header {
 
 .right_nav_icon .user_icon {
   display: none;
+  cursor: pointer;
 }
 
 /* 헤더 태블릿 버전 */

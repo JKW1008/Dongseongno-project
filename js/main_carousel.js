@@ -12,12 +12,9 @@ var swiper = new Swiper(".mySwiper", {
     delay: 4000,
     disableOnInteraction: false,
   },
-  on: {
-    autoplayTimeLeft(s, time, progress) {
-      progressCircle.style.setProperty("--progress", 1 - progress);
-      progressContent.textContent = `${Math.ceil(time / 1000)}`;
-    }
-  }
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
 
 function setImgSrc() {
