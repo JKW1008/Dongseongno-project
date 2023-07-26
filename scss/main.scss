@@ -444,7 +444,7 @@ section.knowledge_in {
     margin-bottom: 119 * $size-1920-1px;
     width: 1440 * $size-1920-1px;
     // height: 370 * $size-1920-1px;
-    border-radius: 50px;
+    border-radius: 30px;
     background: #fff;
     box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
 
@@ -510,6 +510,7 @@ section.sns_item {
           width: 450 * $size-1920-1px;
           height: 254 * $size-1920-1px;
           object-fit: cover;
+          border-radius: 20px 20px 20px 0;
         }
         &:nth-child(2) {
           // border: 1px solid red;
@@ -1147,8 +1148,8 @@ section.sns_item {
 
   section.sns_item {
     .main_text {
-      padding-top: 37 * $size-430-1px;
-      margin-bottom: 44 * $size-430-1px;
+      padding-top: 50 * $size-430-1px;
+      margin-bottom: 60 * $size-430-1px;
     }
     .sns_items {
       display: flex;
@@ -1172,13 +1173,24 @@ section.sns_item {
           &:nth-child(2) {
             width: 45 * $size-430-1px;
             left: 35 * $size-430-1px;
-            bottom: 65 * $size-430-1px;
+            bottom: 90 * $size-430-1px;
           }
         }
         p {
           margin-top: 36 * $size-430-1px;
           font-size: 18 * $size-430-1px;
-          margin-bottom: 36 * $size-430-1px;
+          margin-bottom: 46 * $size-430-1px;
+        }
+
+        &:nth-child(2) {
+          img {
+            &:nth-child(2) {
+              bottom: 120 * $size-430-1px;
+            }
+          }
+          p {
+            margin-bottom: 76 * $size-430-1px;
+          }
         }
       }
     }

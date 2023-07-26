@@ -372,7 +372,7 @@ section.knowledge_in .knowledge_notice {
   margin-top: 4.4285vw;
   margin-bottom: 6.1999vw;
   width: 75.024vw;
-  border-radius: 50px;
+  border-radius: 30px;
   background: #fff;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -436,6 +436,7 @@ section.sns_item .sns_items > div img:nth-child(1) {
   height: 13.2334vw;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 20px 20px 20px 0;
 }
 section.sns_item .sns_items > div img:nth-child(2) {
   width: 2.8655vw;
@@ -969,8 +970,8 @@ section.sns_item > div.gray_section {
     font-size: 2.7912vw;
   }
   section.sns_item .main_text {
-    padding-top: 8.6062vw;
-    margin-bottom: 10.2344vw;
+    padding-top: 11.63vw;
+    margin-bottom: 13.956vw;
   }
   section.sns_item .sns_items {
     display: flex;
@@ -993,11 +994,17 @@ section.sns_item > div.gray_section {
   section.sns_item .sns_items > div img:nth-child(2) {
     width: 10.467vw;
     left: 8.141vw;
-    bottom: 15.119vw;
+    bottom: 20.934vw;
   }
   section.sns_item .sns_items > div p {
     margin-top: 8.3736vw;
     font-size: 4.1868vw;
-    margin-bottom: 8.3736vw;
+    margin-bottom: 10.6996vw;
+  }
+  section.sns_item .sns_items > div:nth-child(2) img:nth-child(2) {
+    bottom: 27.912vw;
+  }
+  section.sns_item .sns_items > div:nth-child(2) p {
+    margin-bottom: 17.6776vw;
   }
 }/*# sourceMappingURL=main.css.map */
