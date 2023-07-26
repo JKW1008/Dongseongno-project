@@ -3,7 +3,8 @@ const root = document.documentElement;
 
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
-var swiper = new Swiper(".mySwiper", {
+
+let main_swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   loop: true,
   effect: 'fade', // 페이드 효과 사용

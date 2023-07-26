@@ -1,4 +1,4 @@
-var swiper = new Swiper(".second-swiper", {
+let second_swiper = new Swiper(".second-swiper", {
   slidesPerView: 4,
   spaceBetween: 30,
   // loop: true,
@@ -18,7 +18,7 @@ var swiper = new Swiper(".second-swiper", {
       slidesPerView: 1,
       spaceBetween: 0,
     },
-    430: {
+    431: {
       slidesPerView: 2,
       spaceBetween: 30,
     },

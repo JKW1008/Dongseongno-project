@@ -911,8 +911,8 @@ section.sns_item {
     &.first_carousel {
       > div.gray_section {
         position: absolute;
-        top: 40%;
-        height: 357 * $size-430-1px;
+        top: 43%;
+        height: 370 * $size-430-1px;
       }
 
       .first_swiper img {
@@ -1071,10 +1071,10 @@ section.sns_item {
   }
 
   section.knowledge_in {
-    height: 775 * $size-430-1px;
+    height: 725 * $size-430-1px;
     .knowledge_title {
       .main_text {
-        padding-top: 91 * $size-430-1px;
+        padding-top: 71 * $size-430-1px;
         margin-bottom: 20 * $size-430-1px;
       }
       p {
