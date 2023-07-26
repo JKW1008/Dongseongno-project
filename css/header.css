@@ -42,10 +42,19 @@ header {
   justify-self: center;
 }
 
+.right_nav {
+  font-size: 16px;
+}
+
 .right_nav button {
   background: none;
   border: none;
   font-weight: 900;
+  font-size: 16px;
+}
+
+.right_nav button.main_login_btn {
+  margin-right: 0.6vw;
 }
 
 .nav_toggle {
@@ -139,8 +148,25 @@ header {
   cursor: pointer;
 }
 
+header #weather {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.1563vw;
+  font-weight: 500;
+}
+
+header #weather span {
+  margin-right: 0.8336vw;
+}
+
+header #weather span img {
+  margin-top: 0.0521vw;
+  width: 2.084vw;
+  height: 2.084vw;
+}
+
 /* 헤더 태블릿 버전 */
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1080px) {
   #weather span:nth-child(2) {
     display: none;
   }

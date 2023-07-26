@@ -61,23 +61,6 @@ body {
   }
 }
 
-header {
-  #weather {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3 * $size-1920-1px;
-    font-weight: 500;
-    span {
-      margin-right: 16 * $size-1920-1px;
-      img {
-        margin-top: 1 * $size-1920-1px;
-        width: 40 * $size-1920-1px;
-        height: 40 * $size-1920-1px;
-      }
-    }
-  }
-}
-
 section.main_carousel {
   padding-top: 20px;
   .swiper {

@@ -43,21 +43,6 @@ body .main_text span {
   font-weight: bold;
 }
 
-header #weather {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.1563vw;
-  font-weight: 500;
-}
-header #weather span {
-  margin-right: 0.8336vw;
-}
-header #weather span img {
-  margin-top: 0.0521vw;
-  width: 2.084vw;
-  height: 2.084vw;
-}
-
 section.main_carousel {
   padding-top: 20px;
 }
