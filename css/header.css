@@ -31,6 +31,7 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header_inner img {
@@ -167,6 +168,11 @@ header #weather span img {
 
 /* 헤더 태블릿 버전 */
 @media screen and (max-width: 1080px) {
+  .header_inner img {
+    width: 120px;
+    height: 60px;
+  }
+
   #weather span:nth-child(2) {
     display: none;
   }
