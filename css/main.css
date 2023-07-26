@@ -402,7 +402,7 @@ section.knowledge_in .knowledge_notice .notice_items > div img {
 section.knowledge_in .knowledge_notice .notice_items > div p {
   font-size: 0.9378vw;
   font-style: normal;
-  color: var(--font-color, #666);
+  color: var(--sub-text, #7e7e7e);
   font-weight: 500;
 }
 section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(2) {
@@ -466,7 +466,7 @@ section.sns_item > div.gray_section {
   z-index: -1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   body .wrapper {
     width: 97%;
   }
@@ -746,7 +746,7 @@ section.sns_item > div.gray_section {
     display: none;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   body .main_text {
     font-size: 5.5824vw;
     margin-bottom: 9.304vw;
@@ -842,7 +842,7 @@ section.sns_item > div.gray_section {
     bottom: 110px;
   }
   section.second_carousel {
-    height: 188.406vw;
+    height: 158.168vw;
   }
   section.second_carousel .wrapper {
     width: 96%;
@@ -851,10 +851,13 @@ section.sns_item > div.gray_section {
     margin-bottom: 9.304vw;
   }
   section.second_carousel .swiper-wrapper .swiper-slide {
-    height: 158.168vw;
+    height: 127.93vw;
+  }
+  section.second_carousel .swiper-wrapper .swiper-slide:first-child {
+    margin-left: 13.0256vw;
   }
   section.second_carousel .swiper-wrapper .swiper-slide img {
-    width: 90.714vw;
+    width: 69.78vw;
   }
   section.second_carousel .swiper-wrapper .swiper-slide .festival_text {
     margin-top: -1.8608vw;
@@ -905,7 +908,7 @@ section.sns_item > div.gray_section {
   }
   section.knowledge_in .knowledge_title .main_text {
     padding-top: 21.1666vw;
-    margin-bottom: 6.978vw;
+    margin-bottom: 4.652vw;
   }
   section.knowledge_in .knowledge_title p {
     font-size: 3.7216vw;
@@ -915,6 +918,7 @@ section.sns_item > div.gray_section {
   }
   section.knowledge_in .knowledge_title .knowledge_btns {
     margin-top: 4.652vw;
+    margin-bottom: 6.978vw;
   }
   section.knowledge_in .knowledge_title .knowledge_btns button {
     font-size: 3.0238vw;
@@ -959,10 +963,10 @@ section.sns_item > div.gray_section {
   }
   section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(2) {
     width: 53.498vw;
-    font-size: 3.7216vw;
+    font-size: 3.2564vw;
   }
   section.knowledge_in .knowledge_notice .notice_items > div p:nth-child(3) {
-    font-size: 3.2564vw;
+    font-size: 2.7912vw;
   }
   section.sns_item .main_text {
     padding-top: 8.6062vw;

@@ -18,19 +18,19 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 function setImgSrc() {
-  if (window.matchMedia("(max-width: 430px)").matches) {
+  if (window.matchMedia("(max-width: 431px)").matches) {
     // The view width is less than or equal to 430 pixels
     const images = document.querySelectorAll(".main_carousel .swiper-slide img");
     images.forEach((img, index) => {
       img.src = `./img/Frame${index + 7}.png`;
     });
-  } else if (window.matchMedia("(max-width: 768px)").matches) {
+  } else if (window.matchMedia("(max-width: 769px)").matches) {
     // The view width is less than or equal to 768 pixels
     const images = document.querySelectorAll(".main_carousel .swiper-slide img");
     images.forEach((img, index) => {
       img.src = `./img/Frame${index + 4}.png`;
     });
-  } else if (window.matchMedia("(min-width: 769px)").matches) {
+  } else if (window.matchMedia("(min-width: 770px)").matches) {
     // The view width is greater than 768 pixels
     const images = document.querySelectorAll(".main_carousel .swiper-slide img");
     images.forEach((img, index) => {
