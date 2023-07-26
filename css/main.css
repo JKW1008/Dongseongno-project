@@ -95,8 +95,16 @@ section.main_carousel .slide_text h2 {
   font-weight: bold;
   color: #eee;
 }
-section.main_carousel .autoplay-progress {
-  display: none;
+section.main_carousel .swiper-pagination {
+  bottom: 40%;
+  opacity: 0;
+  /* 초기에 투명도를 0으로 설정 */
+  animation: fadeIn 2s forwards;
+  /* fadeIn 애니메이션을 0.5초 동안 실행 */
+}
+section.main_carousel .swiper-pagination .swiper-pagination-bullet {
+  width: 0.521vw;
+  height: 0.521vw;
 }
 
 section.first_carousel {
@@ -494,6 +502,13 @@ section.sns_item > div.gray_section {
   section.main_carousel .slide_text h2 {
     font-size: 5.9892vw;
   }
+  section.main_carousel .swiper-pagination {
+    bottom: 41%;
+  }
+  section.main_carousel .swiper-pagination .swiper-pagination-bullet {
+    width: 1.0416vw;
+    height: 1.0416vw;
+  }
   section.first_carousel {
     height: 113.274vw;
   }
@@ -761,6 +776,13 @@ section.sns_item > div.gray_section {
   }
   section.main_carousel .slide_text h2 {
     font-size: 6.978vw;
+  }
+  section.main_carousel .swiper-pagination {
+    bottom: 42%;
+  }
+  section.main_carousel .swiper-pagination .swiper-pagination-bullet {
+    width: 1.8608vw;
+    height: 1.8608vw;
   }
   section.first_carousel {
     height: 167.472vw;

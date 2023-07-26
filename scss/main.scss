@@ -120,9 +120,16 @@ section.main_carousel {
       color: #eee;
     }
   }
-
-  .autoplay-progress {
-    display: none;
+  .swiper-pagination {
+    bottom: 40%;
+    opacity: 0;
+    /* 초기에 투명도를 0으로 설정 */
+    animation: fadeIn 2s forwards;
+    /* fadeIn 애니메이션을 0.5초 동안 실행 */
+    .swiper-pagination-bullet {
+      width: 10 * $size-1920-1px;
+      height: 10 * $size-1920-1px;
+    }
   }
 }
 
@@ -581,6 +588,13 @@ section.sns_item {
         font-size: 46 * $size-768-1px;
       }
     }
+    .swiper-pagination {
+      bottom: 41%;
+      .swiper-pagination-bullet {
+        width: 8 * $size-768-1px;
+        height: 8 * $size-768-1px;
+      }
+    }
   }
 
   section.first_carousel {
@@ -896,6 +910,13 @@ section.sns_item {
       }
       h2 {
         font-size: 30 * $size-430-1px;
+      }
+    }
+    .swiper-pagination {
+      bottom: 42%;
+      .swiper-pagination-bullet {
+        width: 8 * $size-430-1px;
+        height: 8 * $size-430-1px;
       }
     }
   }
