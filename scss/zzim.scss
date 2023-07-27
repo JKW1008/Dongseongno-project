@@ -19,24 +19,28 @@ $font-color_G: #959595;
 
   .main_zzim_title {
     margin: 50 * $size-1920-1px;
-    font-size: 30 * $size-1920-1px;
+    font-size: 25 * $size-1920-1px;
     font-style: normal;
     font-weight: 700;
   }
   .main_zzim_title_line {
     margin-bottom: 50 * $size-1920-1px;
-    border-bottom: 1px solid #acacac;
+    border-bottom: 1px solid $font-color_G;
   }
   .user_info {
-    width: 720 * $size-1920-1px;
+    width: 1440 * $size-1920-1px;
     height: 150 * $size-1920-1px;
-    border: 1px solid black;
+    margin: 0 auto;
+    border: 2px solid $font-color_G;
     text-align: center;
-    font-size: 32 * $size-1920-1px;
+    font-size: 20 * $size-1920-1px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-bottom: 50 * $size-1920-1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 500 * $size-1920-1px;
     p {
       margin-top: 53 * $size-1920-1px;
     }
@@ -44,7 +48,7 @@ $font-color_G: #959595;
   .zzim_title {
     margin-left: 50 * $size-1920-1px;
     margin-bottom: 20 * $size-1920-1px;
-    font-size: 28 * $size-1920-1px;
+    font-size: 25 * $size-1920-1px;
     font-style: normal;
     font-weight: 700;
     span {
@@ -72,6 +76,16 @@ $font-color_G: #959595;
     grid-template-columns: repeat(3, 1fr);
     img {
       width: 400 * $size-1920-1px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .zzim_item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      img {
+        width: 330 * $size-768-1px;
+      }
     }
   }
 }

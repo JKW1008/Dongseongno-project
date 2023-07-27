@@ -7,24 +7,28 @@
 }
 .zzim .main_zzim_title {
   margin: 2.605vw;
-  font-size: 1.563vw;
+  font-size: 1.3025vw;
   font-style: normal;
   font-weight: 700;
 }
 .zzim .main_zzim_title_line {
   margin-bottom: 2.605vw;
-  border-bottom: 1px solid #acacac;
+  border-bottom: 1px solid #959595;
 }
 .zzim .user_info {
-  width: 37.512vw;
+  width: 75.024vw;
   height: 7.815vw;
-  border: 1px solid black;
+  margin: 0 auto;
+  border: 2px solid #959595;
   text-align: center;
-  font-size: 1.6672vw;
+  font-size: 1.042vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   margin-bottom: 2.605vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 26.05vw;
 }
 .zzim .user_info p {
   margin-top: 2.7613vw;
@@ -32,7 +36,7 @@
 .zzim .zzim_title {
   margin-left: 2.605vw;
   margin-bottom: 1.042vw;
-  font-size: 1.4588vw;
+  font-size: 1.3025vw;
   font-style: normal;
   font-weight: 700;
 }
@@ -60,4 +64,13 @@
 }
 .zzim .zzim_item img {
   width: 20.84vw;
+}
+@media screen and (max-width: 768px) {
+  .zzim .zzim_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .zzim .zzim_item img {
+    width: 42.966vw;
+  }
 }
