@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap%22");
+
+$size-1920-1px: 0.0521vw;
+$size-768-1px: 0.1302vw;
+$size-430-1px: 0.2326vw;
+
+$my-font: "Noto Sans KR", sans-serif;
+
+$main-color: #f54747;
+$border-color: #ececec;
+$font-color_W: #efefef;
+$font-color_G: #959595;
+
+.question_wrapper {
+  width: 80%;
+  padding-top: 90px;
+  margin: 0 auto;
+  font-family: $my-font;
+  .main_question_title {
+    margin: 80 * $size-1920-1px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .main_question_title::before {
+    content: "✨";
+    margin-right: 20px;
+  }
+  .main_question_title::after {
+    content: "✨";
+    margin-left: 20px;
+  }
+  .question_title {
+    margin-left: 50 * $size-1920-1px;
+    margin-bottom: 20 * $size-1920-1px;
+    font-size: 25 * $size-1920-1px;
+    font-weight: 700;
+    span {
+      margin-left: 10 * $size-1920-1px;
+    }
+    span::before {
+      content: "✔";
+      color: red;
+      margin-right: 20px;
+    }
+  }
+  .question_title_line {
+    width: 200px;
+    border-bottom: 1px solid #acacac;
+    margin-left: 30 * $size-1920-1px;
+  }
+}
