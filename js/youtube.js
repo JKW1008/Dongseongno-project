@@ -1,5 +1,5 @@
 var optionParams = {
-    q: "동성로맛집",
+    q: "동성로관광",
     part: "snippet",
     key: config.YOUTUBE_API_KEY,
     type: "video",

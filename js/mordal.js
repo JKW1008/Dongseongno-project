@@ -1,10 +1,12 @@
-const button = document.querySelector(".main_login_btn");
+const buttons = document.querySelectorAll(".main_login_btn");
 const dialog = document.querySelector("dialog");
 
-button.addEventListener("click", () => {
-  dialog.showModal();
-})
-
-dialog.addEventListener("close", () => {
-  console.log(dialog.returnValue);
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    dialog.showModal();
+  });
 });
+
+// dialog.addEventListener("close", () => {
+//   console.log(dialog.returnValue);
+// });

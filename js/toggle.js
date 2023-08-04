@@ -1,5 +1,5 @@
-const mainMenuTitle = document.querySelectorAll(".main_menu_title");
-const subMenues = document.querySelectorAll(".sub_menu");
+const mainMenuTitle = document.querySelectorAll(".sideAccordion_title");
+const subMenues = document.querySelectorAll(".sideAccordion_menu");
 
 // console.log(subMenues);
 for (let i = 0; i < mainMenuTitle.length; i++) {

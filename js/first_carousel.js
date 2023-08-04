@@ -1,8 +1,8 @@
-var swiper = new Swiper(".first_swiper", {
+let first_swiper = new Swiper(".first_swiper", {
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
-  effect: 'fade', // 페이드 효과 사용
+  effect: window.innerWidth > 769 ? 'fade' : '', // 페이드 효과 사용
   autoplay: {
     delay: 3000,
     disableOnInteraction: true,
@@ -14,4 +14,8 @@ var swiper = new Swiper(".first_swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+window.addEventListener('resize', function () {
+  first_swiper.params.effect = window.innerWidth > 769 ? 'fade' : '';
 });
