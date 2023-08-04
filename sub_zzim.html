@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나의여행_찜한 여행</title>
-    <link type="image/x-icon" rel="icon" sizes="180x180" href="./img/apple-icon-180x180.png" />
+    <link
+      type="image/x-icon"
+      rel="icon"
+      sizes="180x180"
+      href="./img/apple-icon-180x180.png"
+    />
     <link rel="stylesheet" href="./css/default.css" />
-    <link rel="stylesheet" href="./css/subStyle/zzim.css" />
+    <!-- <link rel="stylesheet" href="./css/subStyle/zzim.css" /> -->
+    <link rel="stylesheet" href="./scss/zzim.css" />
   </head>
   <body>
     <header>
@@ -86,7 +92,11 @@
             </div>
             <button class="main_login_btn">로그인</button>
             <button>회원가입</button>
-            <img src="./img/user_icon.png" alt="user_icon" class="main_login_btn user_icon" />
+            <img
+              src="./img/user_icon.png"
+              alt="user_icon"
+              class="main_login_btn user_icon"
+            />
           </div>
           <!-- 토글 메뉴 -->
           <div class="nav_toggle">
@@ -167,7 +177,9 @@
 
     <dialog>
       <form method="dialog">
-        <button value="close" class="close_btn"><i class="fa-solid fa-x"></i></button>
+        <button value="close" class="close_btn">
+          <i class="fa-solid fa-x"></i>
+        </button>
         <!-- <button value="confirm">confirm</button> -->
       </form>
       <div class="form-box">
@@ -176,12 +188,24 @@
             <h2>로그인</h2>
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>
-              <input placeholder="아이디" type="text" minlength="5" id="userid" required />
+              <input
+                placeholder="아이디"
+                type="text"
+                minlength="5"
+                id="userid"
+                required
+              />
               <label for="userid"></label>
             </div>
             <div class="inputbox">
               <ion-icon name="lock-closed-outline"></ion-icon>
-              <input placeholder="비밀번호" type="password" minlength="5" id="userpassword" required />
+              <input
+                placeholder="비밀번호"
+                type="password"
+                minlength="5"
+                id="userpassword"
+                required
+              />
               <label for="userpassword"></label>
             </div>
             <div class="forget">
@@ -201,11 +225,6 @@
 
     <main class="zzim">
       <div class="main_zzim_title">나의 여행</div>
-      <!-- <div class="main_zzim_title_line"></div> -->
-      <!-- <div class="user_info">
-        <img src="./img/Profile.png" alt="사용자프로필사진" />
-        <p>정강우 님의 대구여행</p>
-      </div> -->
       <div class="zzim_title">
         <span>찜한 여행</span>
       </div>
@@ -319,7 +338,10 @@
     </footer>
 
     <!--  -->
-    <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/59f8fe4f52.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/toggle.js"></script>
 
     <script src="./js/config.js"></script>

@@ -40,7 +40,7 @@
   margin-left: 1.563vw;
 }
 .zzim .zzim_icon {
-  width: 19.798vw;
+  width: 40%;
   margin: 0 auto;
   margin-top: 2.8655vw;
   display: flex;
@@ -68,10 +68,14 @@
 .zzim .zzim_item .zzim_item_list_title {
   display: flex;
   justify-content: space-around;
-  padding: 0 70px;
+  padding: 0 30px;
 }
 .zzim .zzim_item .zzim_item_list_title img {
-  width: 40px;
+  width: 30px;
+  padding-top: 10px;
+}
+.zzim .zzim_item .zzim_item_list_title div {
+  font-size: 1.3025vw;
 }
 .zzim .zzim_item .zzim_item_list_title div p:nth-child(1) {
   font-weight: 600;
@@ -86,9 +90,25 @@
   margin-top: 10px;
 }
 @media screen and (max-width: 1080px) {
+  .zzim .zzim {
+    width: 80%;
+    padding-top: 90px;
+    margin: 0 auto;
+    font-family: "Noto Sans KR", sans-serif;
+  }
   .zzim .main_zzim_title {
     text-align: center;
     font-size: 3.255vw;
+    margin-bottom: 40px;
+  }
+  .zzim .zzim_title {
+    font-size: 15px;
+  }
+  .zzim .zzim_title_line {
+    margin-left: 3.906vw;
+  }
+  .zzim .zzim_icon img {
+    width: 3.906vw;
   }
   .zzim .zzim_item {
     display: grid;
@@ -103,15 +123,25 @@
     text-align: center;
     margin-top: 10px;
   }
+  .zzim .zzim_item_list_title div {
+    font-size: 1.563vw;
+  }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .zzim .main_zzim_title {
-    font-size: 5.815vw;
+    font-size: 5.3498vw;
     margin: 20px;
+    padding-top: 20px;
   }
   .zzim .zzim_title {
-    font-size: 4.652vw;
+    text-align: center;
+    font-size: 3.489vw;
+    padding-right: 20px;
     margin: 20px;
+    padding-top: 40px;
+  }
+  .zzim .zzim_title_line {
+    display: none;
   }
   .zzim .zzim_item {
     display: grid;
@@ -120,6 +150,12 @@
   .zzim .zzim_item img {
     width: 100%;
   }
+  .zzim .zzim_item .zzim_item_list_title div {
+    font-size: 4.652vw;
+  }
+  .zzim .zzim_item_list_title {
+    padding: 0;
+  }
   .zzim .zzim_icon {
     width: 70%;
     margin-top: 30px;
@@ -127,4 +163,4 @@
   .zzim .zzim_icon img {
     width: 30px;
   }
-}
+}/*# sourceMappingURL=zzim.css.map */
