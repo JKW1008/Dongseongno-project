@@ -5,6 +5,10 @@
   padding-top: 90px;
   margin: 0 auto;
   font-family: "Noto Sans KR", sans-serif;
+  color: #333333;
+}
+.review_wrapper #last_item {
+  margin-bottom: 80px;
 }
 .review_wrapper .main_review_title {
   margin: 4.168vw;
@@ -40,20 +44,81 @@
   margin-left: 1.563vw;
 }
 .review_wrapper .review_item {
+  margin: 0 auto;
   margin-top: 90px;
-  border: 1px solid black;
+  border: 1px solid red;
+  height: 300px;
 }
 .review_wrapper .review_item .review_item_list {
   display: flex;
 }
 .review_wrapper .review_item .review_item_list .review_shop {
-  margin: 10px;
-  margin-left: 60px;
+  margin: 40px;
+  margin-left: 50px;
   text-align: center;
+  font-size: 1.042vw;
+}
+.review_wrapper .review_item .review_item_list .review_shop img {
+  width: 12.504vw;
 }
 .review_wrapper .review_item .review_item_list .review_shop p {
   margin-top: 20px;
 }
 .review_wrapper .review_item .review_item_list .review_shop i {
+  margin-top: 10px;
   color: #f1a511;
+  flex-wrap: nowrap;
+}
+.review_wrapper .review_item .review_item_list .review_text {
+  display: flex;
+  margin-left: 2.605vw;
+  font-weight: 600;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_title {
+  width: 100%;
+  margin-right: 10px;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_title .text_title {
+  margin-top: 3.9075vw;
+  font-size: 1.563vw;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_title .text_text {
+  margin-top: 3.647vw;
+  font-size: 1.042vw;
+  font-weight: 400;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_photo {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  width: 100%;
+  margin-top: 70px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_photo img {
+  width: 10.42vw;
+  height: 10.42vw;
+}
+@media screen and (max-width: 1080px) {
+  .review_wrapper .review_shop img {
+    width: 22.224vw;
+  }
+  .review_wrapper .review_text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .review_wrapper .review_text .review_text_title .text_title {
+    font-size: 2.778vw;
+  }
+  .review_wrapper .review_text .review_text_title .text_text {
+    font-size: 1.852vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .review_wrapper .review_item_list {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=review.css.map */
