@@ -39,3 +39,12 @@
   border-bottom: 1px solid #acacac;
   margin-left: 1.563vw;
 }
+.question_wrapper .search_space {
+  width: 100%;
+  height: 80px;
+  background-color: #acacac;
+}
+.question_wrapper .list_select {
+  display: flex;
+  justify-content: space-between;
+}

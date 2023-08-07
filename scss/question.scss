@@ -49,4 +49,13 @@ $font-color_G: #959595;
     border-bottom: 1px solid #acacac;
     margin-left: 30 * $size-1920-1px;
   }
+  .search_space {
+    width: 100%;
+    height: 80px;
+    background-color: #acacac;
+  }
+  .list_select {
+    display: flex;
+    justify-content: space-between;
+  }
 }

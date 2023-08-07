@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나의여행_질문</title>
-    <link
-      type="image/x-icon"
-      rel="icon"
-      sizes="180x180"
-      href="./img/apple-icon-180x180.png"
-    />
+    <link type="image/x-icon" rel="icon" sizes="180x180" href="./img/apple-icon-180x180.png" />
     <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/subStyle/question.css" />
     <link rel="stylesheet" href="./scss/question.css" />
   </head>
   <body>
@@ -91,11 +87,7 @@
             </div>
             <button class="main_login_btn">로그인</button>
             <button>회원가입</button>
-            <img
-              src="./img/user_icon.png"
-              alt="user_icon"
-              class="main_login_btn user_icon"
-            />
+            <img src="./img/user_icon.png" alt="user_icon" class="main_login_btn user_icon" />
           </div>
           <!-- 토글 메뉴 -->
           <div class="nav_toggle">
@@ -186,24 +178,12 @@
             <h2>로그인</h2>
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>
-              <input
-                placeholder="아이디"
-                type="text"
-                minlength="5"
-                id="userid"
-                required
-              />
+              <input placeholder="아이디" type="text" minlength="5" id="userid" required />
               <label for="userid"></label>
             </div>
             <div class="inputbox">
               <ion-icon name="lock-closed-outline"></ion-icon>
-              <input
-                placeholder="비밀번호"
-                type="password"
-                minlength="5"
-                id="userpassword"
-                required
-              />
+              <input placeholder="비밀번호" type="password" minlength="5" id="userpassword" required />
               <label for="userpassword"></label>
             </div>
             <div class="forget">
@@ -222,16 +202,46 @@
     </dialog>
 
     <main class="question_wrapper">
+      <!-- title -->
       <div class="main_question_title">나의 여행</div>
       <div class="question_title">
         <span>나의 질문</span>
       </div>
       <div class="question_title_line"></div>
 
-      //검색타이틀
-      <div>
-        <div>제목</div>
+      <!-- Search space -->
+      <div class="search_space">
+        <select name="search" id="search_list">
+          <option value="">제목</option>
+        </select>
+
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          검색
+        </button>
       </div>
+
+      <!-- 셀렉트 -->
+      <div class="list_select">
+        <p>00개의 게시글이 있습니다.</p>
+        <div>
+          <select name="list_num" id="list_num">
+            <option value="">10개 보기</option>
+            <option value="">15개 보기</option>
+            <option value="">20개 보기</option>
+          </select>
+          <select name="list_answer" id="list_answer">
+            <option value="">답변여부</option>
+            <option value="">답변</option>
+            <option value="">미답변</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 글 목록 -->
+      <div></div>
+      <div></div>
+      <div></div>
     </main>
 
     <footer>
@@ -256,10 +266,7 @@
       </div>
     </footer>
     <!--  -->
-    <script
-      src="https://kit.fontawesome.com/59f8fe4f52.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
     <script src="./js/toggle.js"></script>
 
     <script src="./js/config.js"></script>
