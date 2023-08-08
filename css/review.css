@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap%22");
+.review_wrapper {
+  width: 80%;
+  padding-top: 90px;
+  margin: 0 auto;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333333;
+}
+.review_wrapper #last_item {
+  margin-bottom: 80px;
+}
+.review_wrapper .main_review_title {
+  margin: 4.168vw;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.review_wrapper .main_review_title::before {
+  content: "✨";
+  margin-right: 20px;
+}
+.review_wrapper .main_review_title::after {
+  content: "✨";
+  margin-left: 20px;
+}
+.review_wrapper .review_title {
+  margin-left: 2.605vw;
+  margin-bottom: 1.042vw;
+  font-size: 1.3025vw;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.review_wrapper .review_title span {
+  margin-left: 0.521vw;
+}
+.review_wrapper .review_title span::before {
+  content: "✔";
+  color: red;
+  margin-right: 20px;
+}
+.review_wrapper .review_title_line {
+  width: 200px;
+  border-bottom: 0.5px solid rgba(163, 163, 163, 0.7);
+  margin-left: 1.563vw;
+}
+.review_wrapper .review_item {
+  margin: 0 auto;
+  margin-top: 90px;
+  border: 0.5px solid rgba(163, 163, 163, 0.7);
+  height: 100%;
+}
+.review_wrapper .review_item .review_item_list {
+  display: flex;
+  justify-content: center;
+}
+.review_wrapper .review_item .review_item_list .review_shop {
+  margin: 40px;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 1.042vw;
+}
+.review_wrapper .review_item .review_item_list .review_shop p {
+  margin-top: 20px;
+}
+.review_wrapper .review_item .review_item_list .review_shop i {
+  margin-top: 10px;
+  color: #f1a511;
+  flex-wrap: nowrap;
+}
+.review_wrapper .review_item .review_item_list .review_text {
+  display: flex;
+  font-weight: 600;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_title {
+  width: 100%;
+  margin-right: 10px;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_title .text_title {
+  margin-top: 3.9075vw;
+  font-size: 2.084vw;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_title .text_text {
+  line-height: 30px;
+  margin-top: 3.647vw;
+  font-size: 1.1462vw;
+  font-weight: 400;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_photo {
+  display: flex;
+  width: 100%;
+  margin-top: 70px;
+  overflow: hidden;
+}
+.review_wrapper .review_item .review_item_list .review_text .review_text_photo img {
+  margin-left: 10px;
+  width: 10.42vw;
+  height: 10.42vw;
+}
+@media screen and (max-width: 1080px) {
+  .review_wrapper .main_review_title {
+    font-size: 2.778vw;
+  }
+  .review_wrapper .review_shop img {
+    width: 23.15vw;
+  }
+  .review_wrapper .review_text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .review_wrapper .review_text .review_text_title .text_title {
+    font-size: 3.704vw;
+  }
+  .review_wrapper .review_text .review_text_title .text_text {
+    font-size: 1.852vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .review_wrapper .main_review_title {
+    font-size: 6.978vw;
+    margin-top: 30px;
+  }
+  .review_wrapper .review_title {
+    font-size: 3.489vw;
+  }
+  .review_wrapper .review_item .review_item_list {
+    display: flex;
+    flex-direction: column;
+  }
+  .review_wrapper .review_item .review_item_list .review_shop img {
+    width: 39.06vw;
+  }
+  .review_wrapper .review_item .review_item_list .review_text .review_text_title {
+    text-align: center;
+    color: #333333;
+  }
+  .review_wrapper .review_item .review_item_list .review_text .review_text_title .text_title {
+    font-size: 2.604vw;
+  }
+  .review_wrapper .review_item .review_item_list .review_text .review_text_title .text_text {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 2.604vw;
+  }
+  .review_wrapper .review_item .review_item_list .review_text .review_text_photo {
+    margin: 10px 0;
+    justify-content: center;
+  }
+  .review_wrapper .review_item .review_item_list .review_text .review_text_photo img {
+    width: 23.26vw;
+    height: 23.26vw;
+  }
+}

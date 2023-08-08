@@ -7,7 +7,10 @@
   <title>동성로랑</title>
   <link type="image/x-icon" rel="icon" sizes="180x180" href="./img/apple-icon-180x180.png" />
   <link rel="stylesheet" href="./css/default.css" />
-  <link rel="stylesheet" href="./css/sns.css" />
+  <link rel="stylesheet" href="./css/mapStyle.css">
+  <link rel="stylesheet" href="./css/pagination_shopping.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 </head>
 
 <body>
@@ -22,16 +25,16 @@
               <span class="main_title">여행지</span>
               <i class="fa-sharp fa-solid fa-caret-down"></i>
               <ul class="sub_menu">
-                <a href="./toulist.html">
+                <a href="./sub_toulist.html">
                   <li>관광지</li>
                 </a>
-                <a href="./food.html">
+                <a href="./sub_food.html">
                   <li>음식</li>
                 </a>
-                <a href="./shopping.html">
+                <a href="./sub_shopping.html">
                   <li>쇼핑</li>
                 </a>
-                <a href="./accommodation.html">
+                <a href="./sub_accommodation.html">
                   <li>숙박</li>
                 </a>
               </ul>
@@ -45,13 +48,13 @@
               <span class="main_title">나의 여행</span>
               <i class="fa-sharp fa-solid fa-caret-down"></i>
               <ul class="sub_menu">
-                <a href="#">
+                <a href="./sub_zzim.html">
                   <li>찜한 여행</li>
                 </a>
-                <a href="#">
+                <a href="./sub_review.html">
                   <li>나의 리뷰</li>
                 </a>
-                <a href="#">
+                <a href="./sub_question.html">
                   <li>나의 질문</li>
                 </a>
               </ul>
@@ -64,13 +67,13 @@
               <span class="main_title">커뮤니티</span>
               <i class="fa-sharp fa-solid fa-caret-down"></i>
               <ul class="sub_menu">
-                <a href="./sns.html">
+                <a href="./sub_sns.html">
                   <li>SNS</li>
                 </a>
-                <a href="#">
+                <a href="./sub_know_in.html">
                   <li>동성로 지식IN</li>
                 </a>
-                <a href="#">
+                <a href="./sub_service.html">
                   <li>고객센터</li>
                 </a>
               </ul>
@@ -107,19 +110,16 @@
                   <span>여행지</span>
                   <i class="fa-sharp fa-solid fa-caret-down"></i>
                   <ul class="sideAccordion_menu">
-                    <a href="#">
+                    <a href="./sub_toulist.html">
                       <li>관광지</li>
                     </a>
-                    <a href="#">
-                      <li>놀거리</li>
-                    </a>
-                    <a href="#">
+                    <a href="./sub_food.html">
                       <li>음식</li>
                     </a>
-                    <a href="#">
+                    <a href="./sub_shopping.html">
                       <li>쇼핑</li>
                     </a>
-                    <a href="#">
+                    <a href="./sub_accommodation.html">
                       <li>숙박</li>
                     </a>
                   </ul>
@@ -132,13 +132,13 @@
                   <span>나의여행</span>
                   <i class="fa-sharp fa-solid fa-caret-down"></i>
                   <ul class="sideAccordion_menu">
-                    <a href="#">
+                    <a href="./sub_zzim.html">
                       <li>찜한 여행</li>
                     </a>
-                    <a href="#">
+                    <a href="./sub_review.html">
                       <li>나의 리뷰</li>
                     </a>
-                    <a href="#">
+                    <a href="./sub_question.html">
                       <li>나의 질문</li>
                     </a>
                   </ul>
@@ -151,10 +151,13 @@
                   <span>커뮤니티</span>
                   <i class="fa-sharp fa-solid fa-caret-down"></i>
                   <ul class="sideAccordion_menu">
-                    <a href="#">
+                    <a href="./sub_sns.html">
+                      <li>SNS</li>
+                    </a>
+                    <a href="./sub_know_in.html">
                       <li>동성로 지식IN</li>
                     </a>
-                    <a href="#">
+                    <a href="./sub_service.html">
                       <li>고객센터</li>
                     </a>
                   </ul>
@@ -202,60 +205,97 @@
   </dialog>
 
   <main>
-    <section class="sns_banner">
-      <img src="./img/sns_main_img.png" alt="main_banner" class="main_banner">
-      <div class="main_title">
-        <img src="./img/youtube_icon2.png" alt="icon">
+    <section class="map_banner">
+      <img src="./img/shopping_main_img.png" alt="map_banner" class="map_banner">
+      <div class="map_title">
+        <img src="./img/shopping_marker.png" alt="marker">
         <div class="map_title_text">
-          <p>SNS</p>
-          <p>홈 > 커뮤니티 > SNS</p>
+          <p>쇼핑</p>
+          <p>홈 > 여행지 > 쇼핑</p>
         </div>
       </div>
-      <div class="line"></div>
-      <div class="hashtag">
-        <button class="tag-button active" data-tag="관광지"># 관광지</button>
-        <button class="tag-button" data-tag="음식"># 음식</button>
-        <button class="tag-button" data-tag="쇼핑"># 쇼핑</button>
-        <button class="tag-button" data-tag="숙박"># 숙박</button>
-      </div>
     </section>
-    <section class="youtube_items">
-      <p>총 게시물: 12</p>
-      <div id="youtube_results"></div>
-    </section>
-  </main>
 
-
-  <footer>
-    <div class="footer_inner">
+    <section class="map_section">
       <div>
-        <p class="copyright">
-          <img src="./img/logo_white.png" alt="footer_logo" />
-          | 개인정보처리방침 | 이용약관
-        </p>
-        <p class="text">
-          (주)동성로랑 | 대표자:정강우 | 사업자번호:499-81-00612 <br />
-          전화번호:070-4948-1181 | 주소:대구 중구 용덕동 12
-        </p>
-        <p class="en">©DONSEUONLORANG. ALL RIGHTS RESERVED</p>
-      </div>
-      <div class="icon">
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-solid fa-n"></i>
-      </div>
-    </div>
-  </footer>
+        <div class="item_list">
+        </div>
+        <div class="page_container">
+          <button class="button" id="startBtn" disabled>
+            <i class="fa-solid fa-angles-left"></i>
+          </button>
+          <button class="button prevNext" id="prev" disabled>
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
 
-  <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
-  <script src="./js/toggle.js"></script>
-  <script src="./js/sns_button.js"></script>
-  <script src="./js/config.js"></script>
-  <script src="./js/sns_youtube.js"></script>
 
-  <script src="./js/weather.js"></script>
-  <script src="./js/mordal.js"></script>
+          <div class="links">
+            <div class="links-group active"> <!-- 1~3번 숫자 링크 -->
+              <a href="#" class="link active">1</a>
+              <a href="#" class="link">2</a>
+              <a href="#" class="link">3</a>
+            </div>
+            <div class="links-group"> <!-- 4~6번 숫자 링크 (초기에는 보이지 않음) -->
+              <a href="#" class="link">4</a>
+              <a href="#" class="link">5</a>
+              <a href="#" class="link">6</a>
+            </div>
+            <div class="links-group"> <!-- 7~9번 숫자 링크 (초기에는 보이지 않음) -->
+              <a href="#" class="link">7</a>
+              <a href="#" class="link">8</a>
+              <a href="#" class="link">9</a>
+            </div>
+          </div>
+
+
+          <button class="button prevNext" id="next">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <button class="button" id="endBtn">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="map"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_inner">
+        <div>
+          <p class="copyright">
+            <img src="./img/logo_white.png" alt="footer_logo" />
+            | 개인정보처리방침 | 이용약관
+          </p>
+          <p class="text">
+            (주)동성로랑 | 대표자:정강우 | 사업자번호:499-81-00612 <br />
+            전화번호:070-4948-1181 | 주소:대구 중구 용덕동 12
+          </p>
+          <p class="en">©DONSEUONLORANG. ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-solid fa-n"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6b94c492ea514833ba4fe0a9d6a43b6e&libraries=services"></script>
+
+    <script src="./js/pagenation_none.js"></script>
+    <script src="./js/shopping.js" defer></script>
+    <script src="./js/map_shopping.js"></script>
+
+    <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
+
+    <script src="./js/toggle.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/mordal.js"></script>
 </body>
 
 </html>
