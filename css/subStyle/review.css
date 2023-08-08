@@ -29,6 +29,7 @@
   margin-bottom: 1.042vw;
   font-size: 1.3025vw;
   font-weight: 700;
+  margin-top: 50px;
 }
 .review_wrapper .review_title span {
   margin-left: 0.521vw;
@@ -40,13 +41,13 @@
 }
 .review_wrapper .review_title_line {
   width: 200px;
-  border-bottom: 1px solid #acacac;
+  border-bottom: 0.5px solid rgba(163, 163, 163, 0.7);
   margin-left: 1.563vw;
 }
 .review_wrapper .review_item {
   margin: 0 auto;
   margin-top: 90px;
-  border: 1px solid #959595;
+  border: 0.5px solid rgba(163, 163, 163, 0.7);
   height: 100%;
 }
 .review_wrapper .review_item .review_item_list {
@@ -77,7 +78,7 @@
 }
 .review_wrapper .review_item .review_item_list .review_text .review_text_title .text_title {
   margin-top: 3.9075vw;
-  font-size: 1.563vw;
+  font-size: 2.084vw;
 }
 .review_wrapper .review_item .review_item_list .review_text .review_text_title .text_text {
   line-height: 30px;
@@ -97,6 +98,9 @@
   height: 10.42vw;
 }
 @media screen and (max-width: 1080px) {
+  .review_wrapper .main_review_title {
+    font-size: 2.778vw;
+  }
   .review_wrapper .review_shop img {
     width: 23.15vw;
   }
@@ -112,19 +116,40 @@
     font-size: 1.852vw;
   }
 }
-@media screen and (max-width: 500px) {
-  .review_wrapper .review_item_list {
+@media screen and (max-width: 430px) {
+  .review_wrapper .main_review_title {
+    font-size: 6.978vw;
+    margin-top: 30px;
+  }
+  .review_wrapper .review_title {
+    font-size: 3.489vw;
+  }
+  .review_wrapper .review_item .review_item_list {
     display: flex;
     flex-direction: column;
   }
-  .review_wrapper .review_item_list .review_shop img {
+  .review_wrapper .review_item .review_item_list .review_shop img {
     width: 39.06vw;
   }
-  .review_wrapper .review_item_list .review_text .review_text_title {
+  .review_wrapper .review_item .review_item_list .review_text .review_text_title {
     text-align: center;
-    color: #f1a511;
+    color: #333333;
   }
-  .review_wrapper .review_item_list .review_text .review_text_photo {
-    margin-top: 20px;
+  .review_wrapper .review_item .review_item_list .review_text .review_text_title .text_title {
+    font-size: 2.604vw;
+  }
+  .review_wrapper .review_item .review_item_list .review_text .review_text_title .text_text {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 2.604vw;
+  }
+  .review_wrapper .review_item .review_item_list .review_text .review_text_photo {
+    margin: 10px 0;
+    justify-content: center;
+  }
+  .review_wrapper .review_item .review_item_list .review_text .review_text_photo img {
+    width: 23.26vw;
+    height: 23.26vw;
   }
 }

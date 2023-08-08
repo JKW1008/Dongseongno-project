@@ -41,6 +41,7 @@ $font-main-color: #333333;
     margin-bottom: 20 * $size-1920-1px;
     font-size: 25 * $size-1920-1px;
     font-weight: 700;
+    margin-top: 50px;
     span {
       margin-left: 10 * $size-1920-1px;
     }
@@ -52,7 +53,7 @@ $font-main-color: #333333;
   }
   .review_title_line {
     width: 200px;
-    border-bottom: 1px solid #acacac;
+    border-bottom: 0.5px solid rgb(163, 163, 163, 0.7);
     margin-left: 30 * $size-1920-1px;
   }
 
@@ -60,7 +61,7 @@ $font-main-color: #333333;
   .review_item {
     margin: 0 auto;
     margin-top: 90px;
-    border: 1px solid $font-color_G;
+    border: 0.5px solid rgb(163, 163, 163, 0.7);
     height: 100%;
 
     .review_item_list {
@@ -88,7 +89,7 @@ $font-main-color: #333333;
           margin-right: 10px;
           .text_title {
             margin-top: 75 * $size-1920-1px;
-            font-size: 30 * $size-1920-1px;
+            font-size: 40 * $size-1920-1px;
           }
           .text_text {
             line-height: 30px;
@@ -113,6 +114,9 @@ $font-main-color: #333333;
     }
   }
   @media screen and (max-width: 1080px) {
+    .main_review_title {
+      font-size: 30 * $size-1080-1px;
+    }
     .review_shop {
       img {
         width: 250 * $size-1080-1px;
@@ -124,7 +128,6 @@ $font-main-color: #333333;
       width: 100%;
 
       .review_text_title {
-        // border: 1px solid black;
         .text_title {
           font-size: 40 * $size-1080-1px;
         }
@@ -135,22 +138,45 @@ $font-main-color: #333333;
     }
   }
 
-  @media screen and (max-width: 500px) {
-    .review_item_list {
-      display: flex;
-      flex-direction: column;
-      .review_shop {
-        img {
-          width: 300 * $size-768-1px;
+  @media screen and (max-width: 430px) {
+    .main_review_title {
+      font-size: 30 * $size-430-1px;
+      margin-top: 30px;
+    }
+    .review_title {
+      font-size: 15 * $size-430-1px;
+    }
+    .review_item {
+      .review_item_list {
+        display: flex;
+        flex-direction: column;
+        .review_shop {
+          img {
+            width: 300 * $size-768-1px;
+          }
         }
-      }
-      .review_text {
-        .review_text_title {
-          text-align: center;
-          color: #f1a511;
-        }
-        .review_text_photo {
-          margin-top: 20px;
+        .review_text {
+          .review_text_title {
+            text-align: center;
+            color: $font-main-color;
+            .text_title {
+              font-size: 20 * $size-768-1px;
+            }
+            .text_text {
+              margin: 0 auto;
+              margin-top: 10px;
+              width: 80%;
+              font-size: 20 * $size-768-1px;
+            }
+          }
+          .review_text_photo {
+            margin: 10px 0;
+            justify-content: center;
+            img {
+              width: 100 * $size-430-1px;
+              height: 100 * $size-430-1px;
+            }
+          }
         }
       }
     }
