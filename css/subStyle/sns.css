@@ -42,6 +42,7 @@
   .sns_wrapper .sns_wrapper .sns_text .sns_text_title {
     position: absolute;
     bottom: 50%;
+    width: 55.56vw;
   }
   .sns_wrapper .sns_wrapper .sns_text_item {
     position: absolute;
@@ -65,10 +66,7 @@
   }
 }
 @media screen and (max-width: 430px) {
-  .sns_text_title {
-    font-size: larger;
-  }
   .sns_wrapper .sns_text_item {
     display: none;
   }
-} /*# sourceMappingURL=sns.css.map */
+}/*# sourceMappingURL=sns.css.map */
