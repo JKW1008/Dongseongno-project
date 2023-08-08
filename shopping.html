@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동성로랑</title>
+  <link type="image/x-icon" rel="icon" sizes="180x180" href="./img/apple-icon-180x180.png" />
+  <link rel="stylesheet" href="./css/default.css" />
+  <link rel="stylesheet" href="./css/mapStyle.css">
+  <link rel="stylesheet" href="./css/pagination_shopping.css" />
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header_inner">
+      <a href="./index.html"><img src="./img/logo_black.png" alt="동성로랑 logo" /></a>
+
+      <nav class="menu_wrapper">
+        <ui>
+          <li>
+            <div class="main_menu_title main">
+              <span class="main_title">여행지</span>
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+              <ul class="sub_menu">
+                <a href="./toulist.html">
+                  <li>관광지</li>
+                </a>
+                <a href="./food.html">
+                  <li>음식</li>
+                </a>
+                <a href="./shopping.html">
+                  <li>쇼핑</li>
+                </a>
+                <a href="./accommodation.html">
+                  <li>숙박</li>
+                </a>
+              </ul>
+            </div>
+          </li>
+        </ui>
+
+        <ui>
+          <li>
+            <div class="main_menu_title main">
+              <span class="main_title">나의 여행</span>
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+              <ul class="sub_menu">
+                <a href="#">
+                  <li>찜한 여행</li>
+                </a>
+                <a href="#">
+                  <li>나의 리뷰</li>
+                </a>
+                <a href="#">
+                  <li>나의 질문</li>
+                </a>
+              </ul>
+            </div>
+          </li>
+        </ui>
+        <ui>
+          <li>
+            <div class="main_menu_title main">
+              <span class="main_title">커뮤니티</span>
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+              <ul class="sub_menu">
+                <a href="./sns.html">
+                  <li>SNS</li>
+                </a>
+                <a href="#">
+                  <li>동성로 지식IN</li>
+                </a>
+                <a href="#">
+                  <li>고객센터</li>
+                </a>
+              </ul>
+            </div>
+          </li>
+        </ui>
+      </nav>
+
+      <div class="right_nav">
+        <div class="right_nav_icon">
+          <div id="weather">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <button class="main_login_btn">로그인</button>
+          <button>회원가입</button>
+          <img src="./img/user_icon.png" alt="user_icon" class="main_login_btn user_icon" />
+        </div>
+        <!-- 토글 메뉴 -->
+        <div class="nav_toggle">
+          <input type="checkbox" name="" id="menuicon" />
+          <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <!-- 사이드 바 메뉴 -->
+          <div class="sidebar">
+            <ui>
+              <li>
+                <div class="main sideAccordion_title">
+                  <span>여행지</span>
+                  <i class="fa-sharp fa-solid fa-caret-down"></i>
+                  <ul class="sideAccordion_menu">
+                    <a href="./toulist.html">
+                      <li>관광지</li>
+                    </a>
+                    <a href="./food.html">
+                      <li>음식</li>
+                    </a>
+                    <a href="./shopping.html">
+                      <li>쇼핑</li>
+                    </a>
+                    <a href="./accommodation.html">
+                      <li>숙박</li>
+                    </a>
+                  </ul>
+                </div>
+              </li>
+            </ui>
+            <ui>
+              <li>
+                <div class="main sideAccordion_title">
+                  <span>나의여행</span>
+                  <i class="fa-sharp fa-solid fa-caret-down"></i>
+                  <ul class="sideAccordion_menu">
+                    <a href="#">
+                      <li>찜한 여행</li>
+                    </a>
+                    <a href="#">
+                      <li>나의 리뷰</li>
+                    </a>
+                    <a href="#">
+                      <li>나의 질문</li>
+                    </a>
+                  </ul>
+                </div>
+              </li>
+            </ui>
+            <ui>
+              <li>
+                <div class="main sideAccordion_title">
+                  <span>커뮤니티</span>
+                  <i class="fa-sharp fa-solid fa-caret-down"></i>
+                  <ul class="sideAccordion_menu">
+                    <a href="#">
+                      <li>동성로 지식IN</li>
+                    </a>
+                    <a href="#">
+                      <li>고객센터</li>
+                    </a>
+                  </ul>
+                </div>
+              </li>
+            </ui>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <dialog>
+    <form method="dialog">
+      <button value="close" class="close_btn"><i class="fa-solid fa-x"></i></button>
+      <!-- <button value="confirm">confirm</button> -->
+    </form>
+    <div class="form-box">
+      <div class="form-value">
+        <form action="">
+          <h2>로그인</h2>
+          <div class="inputbox">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input placeholder="아이디" type="text" minlength="5" id="userid" required />
+            <label for="userid"></label>
+          </div>
+          <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input placeholder="비밀번호" type="password" minlength="5" id="userpassword" required />
+            <label for="userpassword"></label>
+          </div>
+          <div class="forget">
+            <label for="">
+              <a href="#">아이디 찾기</a>
+              <a href="#">비밀번호 찾기</a>
+            </label>
+          </div>
+          <button class="login_btn">로그인</button>
+          <button class="register_btn">회원가입</button>
+        </form>
+      </div>
+    </div>
+    <div class="border_line"></div>
+    <p class="sns_login">SNS 간편 로그인</p>
+  </dialog>
+
+  <main>
+    <section class="map_banner">
+      <img src="./img/shopping_main_img.png" alt="map_banner" class="map_banner">
+      <div class="map_title">
+        <img src="./img/shopping_marker.png" alt="marker">
+        <div class="map_title_text">
+          <p>쇼핑</p>
+          <p>홈 > 여행지 > 쇼핑</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="map_section">
+      <div>
+        <div class="item_list">
+        </div>
+        <div class="page_container">
+          <button class="button" id="startBtn" disabled>
+            <i class="fa-solid fa-angles-left"></i>
+          </button>
+          <button class="button prevNext" id="prev" disabled>
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+
+
+          <div class="links">
+            <div class="links-group active"> <!-- 1~3번 숫자 링크 -->
+              <a href="#" class="link active">1</a>
+              <a href="#" class="link">2</a>
+              <a href="#" class="link">3</a>
+            </div>
+            <div class="links-group"> <!-- 4~6번 숫자 링크 (초기에는 보이지 않음) -->
+              <a href="#" class="link">4</a>
+              <a href="#" class="link">5</a>
+              <a href="#" class="link">6</a>
+            </div>
+            <div class="links-group"> <!-- 7~9번 숫자 링크 (초기에는 보이지 않음) -->
+              <a href="#" class="link">7</a>
+              <a href="#" class="link">8</a>
+              <a href="#" class="link">9</a>
+            </div>
+          </div>
+
+
+          <button class="button prevNext" id="next">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <button class="button" id="endBtn">
+            <i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="map"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_inner">
+        <div>
+          <p class="copyright">
+            <img src="./img/logo_white.png" alt="footer_logo" />
+            | 개인정보처리방침 | 이용약관
+          </p>
+          <p class="text">
+            (주)동성로랑 | 대표자:정강우 | 사업자번호:499-81-00612 <br />
+            전화번호:070-4948-1181 | 주소:대구 중구 용덕동 12
+          </p>
+          <p class="en">©DONSEUONLORANG. ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="icon">
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-solid fa-n"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6b94c492ea514833ba4fe0a9d6a43b6e&libraries=services"></script>
+
+    <script src="./js/pagenation_none.js"></script>
+    <script src="./js/shopping.js" defer></script>
+    <script src="./js/map_shopping.js"></script>
+
+    <script src="https://kit.fontawesome.com/59f8fe4f52.js" crossorigin="anonymous"></script>
+
+    <script src="./js/toggle.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/mordal.js"></script>
+</body>
+
+</html>
