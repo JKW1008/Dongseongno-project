@@ -13,23 +13,31 @@ $font-color_W: #efefef;
 $font-color_G: #959595;
 $font-main-color: #333333;
 
+body {
+  font-family: $my-font;
+}
+
 .sns_wrapper {
   overflow-x: hidden;
   .sns_bg {
     position: relative;
     width: 100%;
+    img {
+      width: 1920 * $size-1920-1px;
+      height: 450 * $size-1920-1px;
+    }
   }
   .sns_text {
     display: flex;
     justify-content: center;
     .sns_text_title {
       position: absolute;
-      bottom: 68%;
-      width: 600 * $size-1920-1px;
+      bottom: 70%;
+      padding: 0px 5 * $size-1920-1px;
       border-top: 2px solid $main-color;
       border-bottom: 2px solid $main-color;
       p {
-        font-size: 70 * $size-1920-1px;
+        font-size: 78 * $size-1920-1px;
         text-align: center;
         margin: 10px 0;
         color: #fff;
@@ -41,13 +49,30 @@ $font-main-color: #333333;
     }
     .sns_text_item {
       position: absolute;
-      bottom: 58%;
-      width: 700 * $size-1920-1px;
+      bottom: 59%;
+      width: 720 * $size-1920-1px;
       color: #fff;
       p {
+        margin-top: 20 * $size-1920-1px;
         text-align: center;
-        font-size: 17 * $size-1920-1px;
-        line-height: 25px;
+        font-size: 18 * $size-1920-1px;
+        line-height: 30 * $size-1920-1px;
+        font-family: Noto Sans;
+        font-weight: 500;
+      }
+    }
+    .sns_text_item2 {
+      position: absolute;
+      bottom: 62%;
+      width: 740 * $size-1920-1px;
+      color: #fff;
+      p {
+        margin-top: 20 * $size-1920-1px;
+        text-align: center;
+        font-size: 18 * $size-1920-1px;
+        line-height: 30 * $size-1920-1px;
+        font-family: Noto Sans;
+        font-weight: 500;
       }
     }
   }

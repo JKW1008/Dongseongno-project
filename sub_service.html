@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>나의여행_찜한 여행</title>
+  <title>SNS</title>
   <link type="image/x-icon" rel="icon" sizes="180x180" href="./img/apple-icon-180x180.png" />
   <link rel="stylesheet" href="./css/default.css" />
-  <link rel="stylesheet" href="./css/zzim.css" />
+  <link rel="stylesheet" href="./css/question.css" />
+  <link rel="stylesheet" href="./css/know_in.css" />
 </head>
 
 <body>
@@ -203,101 +204,163 @@
     <p class="sns_login">SNS 간편 로그인</p>
   </dialog>
 
-  <main class="zzim">
-    <!-- title -->
-    <div class="main_zzim_title">나의 여행</div>
-    <div class="zzim_title">
-      <span>찜한 여행</span>
+  <!-- title -->
+  <div class="sns_wrapper">
+    <div class="sns_bg">
+      <img src="./img/customer_main_banner.png" alt="고객센터 배경사진" />
     </div>
-    <div class="zzim_title_line"></div>
-
-    <!-- 카테고리 아이콘 -->
-    <div class="zzim_icon">
-      <div class="zzim_icon_item">
-        <img src="./img/toulist_marker.png" alt="관광지" />
-        <p>관광지</p>
+    <div class="sns_text">
+      <div class="sns_text_title">
+        <p><span>고객센터</span></p>
       </div>
-      <div class="zzim_icon_item">
-        <img src="./img/shopping_marker.png" alt="쇼핑" />
-        <p>쇼핑</p>
-      </div>
-      <div class="zzim_icon_item">
-        <img src="./img/accomodation_marker.png" alt="숙박" />
-        <p>숙박</p>
-      </div>
-      <div class="zzim_icon_item">
-        <img src="./img/food_marker.png" alt="음식" />
-        <p>음식</p>
+      <div class="sns_text_item2">
+        <p>
+          사이트 이용 시 불편한 점이 있다거나 건의사항, 틀린 정보 신고 등 자유롭게 문의해주세요.
+          이용자의 의견을 적극 반영하는 동성로랑이 되겠습니다.
+        </p>
       </div>
     </div>
+  </div>
 
-    <!-- 찜한 목록 -->
-    <div class="zzim_item">
-      <div class="zzim_item_list">
-        <img src="https://d2ur7st6jjikze.cloudfront.net/offer_photos/82752/600342_large_1640138630.jpg?1640138630"
-          alt="찜한 여행지 이미지" />
-        <div class="zzim_item_list_title">
-          <img src="./img/toulist_marker.png" alt="찜아이콘" />
-          <div>
-            <p>스파크랜드</p>
-            <p>대구광역시 중구 동성로6길 61</p>
-          </div>
-        </div>
+  <!-- 게시판!  -->
+  <main class="question_wrapper">
+    <!-- 검색공간 -->
+    <div class="search_space">
+      <select name="search" class="search_list">
+        <option value="">제목</option>
+      </select>
+      <input type="text" />
+      <button><i class="fa-solid fa-magnifying-glass">검색</i></button>
+    </div>
+
+    <!-- 셀렉트 -->
+    <div class="list_select">
+      <p>10개의 게시글이 있습니다.</p>
+      <div>
+        <select name="list_answer" class="list_answer">
+          <option value="">카테고리</option>
+          <option value="">관광지</option>
+          <option value="">음식</option>
+          <option value="">쇼핑</option>
+          <option value="">숙박</option>
+        </select>
+        <select name="list_answer" class="list_answer">
+          <option value="">답변여부</option>
+          <option value="">답변</option>
+          <option value="">미답변</option>
+        </select>
       </div>
-      <div class="zzim_item_list">
-        <img
-          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210430_3%2F1619748908256MGs22_JPEG%2FE106iBDoaWO64nliFeULDNmU.JPG.jpg"
-          alt="찜한 여행지 이미지" />
-        <div class="zzim_item_list_title">
-          <img src="./img/shopping_marker.png" alt="찜아이콘" />
-          <div>
-            <p>ZARA 동성로점</p>
-            <p>대구 중구 동성로 17</p>
-          </div>
-        </div>
-      </div>
-      <div class="zzim_item_list">
-        <img src="https://img.siksinhot.com/place/1630399369813006.jpg" alt="찜한 여행지 이미지" />
-        <div class="zzim_item_list_title">
-          <img src="./img/food_marker.png" alt="찜아이콘" />
-          <div>
-            <p>8번식당</p>
-            <p>대구광역시 중구 서성로13길 8</p>
-          </div>
-        </div>
-      </div>
-      <div class="zzim_item_list">
-        <img src="https://lh5.googleusercontent.com/p/AF1QipNQQoAO6N0yb5qunB4wPm8WJsiGzigv0jOxTaMb=w408-h272-k-no"
-          alt="찜한 여행지 이미지" />
-        <div class="zzim_item_list_title">
-          <img src="./img/accomodation_marker.png" alt="찜아이콘" />
-          <div>
-            <p>노블스테이호텔</p>
-            <p>대구광역시 중구 국채보상로123길 23</p>
-          </div>
-        </div>
-      </div>
-      <div class="zzim_item_list">
-        <img src="https://file3.instiz.net/data/file3/2020/03/07/9/2/0/920b3f7d37a9ce7aa3064219d4ef59c7.jpg"
-          alt="찜한 여행지 이미지" />
-        <div class="zzim_item_list_title">
-          <img src="./img/toulist_marker.png" alt="찜아이콘" />
-          <div>
-            <p>CGV 대구한일</p>
-            <p>대구광역시 중구 동성로 39</p>
-          </div>
-        </div>
-      </div>
-      <div class="zzim_item_list">
-        <img src="https://img.insight.co.kr/static/2018/04/20/700/623it6dj630f735leh4l.jpg" alt="찜한 여행지 이미지" />
-        <div class="zzim_item_list_title">
-          <img src="./img/toulist_marker.png" alt="찜아이콘" />
-          <div>
-            <p>동성로 만경관</p>
-            <p>대구광역시 중구 동성로2길 95</p>
-          </div>
-        </div>
-      </div>
+    </div>
+
+    <!-- 글 목록 -->
+    <table class="board">
+      <th>제목</th>
+      <th class="item-none">카테고리</th>
+      <th class="item-none">답변수</th>
+      <th>작성일</th>
+      <tr class="board_item">
+        <td>
+          <span>[미답변]</span>
+          부모님 모시고 갈 음식점 좀 추천해주세요
+        </td>
+        <td class="item_detail item-none">음식점</td>
+        <td class="item_detail item-none">0</td>
+        <td class="item_detail">2023.07.23</td>
+      </tr>
+      <tr class="board_item">
+        <td>
+          <span>[미답변]</span>
+          가성비 좋은 숙소 좀 알려주세요
+        </td>
+        <td class="item_detail item-none">숙박</td>
+        <td class="item_detail item-none">0</td>
+        <td class="item_detail">2023.07.23</td>
+      </tr>
+      <tr class="board_item">
+        <td>
+          <span>[미답변]</span>
+          스시 맛집 뭐가 있나요?
+        </td>
+        <td class="item_detail item-none">음식점</td>
+        <td class="item_detail item-none">0</td>
+        <td class="item_detail">2023.06.28</td>
+      </tr>
+      <tr class="board_item">
+        <td>
+          <span>[답변]</span>
+          스파크랜드 가격이 어떻게 되나요 ?
+        </td>
+        <td class="item_detail item-none">관광지</td>
+        <td class="item_detail item-none">1</td>
+        <td class="item_detail">2023.05.23</td>
+      </tr>
+      <tr class="board_item">
+        <td>
+          <span>[답변]</span>
+          자라 매장 어디있나요 ?
+        </td>
+        <td class="item_detail item-none">쇼핑</td>
+        <td class="item_detail item-none">1</td>
+        <td class="item_detail">2023.02.14</td>
+      </tr>
+      <tr class="board_item">
+        <td>
+          <span>[답변]</span>
+          대구백화점 어디 갔나요?
+        </td>
+        <td class="item_detail item-none">쇼핑</td>
+        <td class="item_detail item-none">1</td>
+        <td class="item_detail">2023.01.10</td>
+      </tr>
+      <tr class="board_item">
+        <td>
+          <span>[답변]</span>
+          어린이들이 놀만한 곳 추천해주세요.
+        </td>
+        <td class="item_detail item-none">관광지</td>
+        <td class="item_detail item-none">1</td>
+        <td class="item_detail">2022.12.29</td>
+      </tr>
+      <tr class="board_item">
+        <td>
+          <span>[답변]</span>
+          동성로 게스트하우스 있나요?
+        </td>
+        <td class="item_detail item-none">숙박</td>
+        <td class="item_detail item-none">1</td>
+        <td class="item_detail">2022.12.20</td>
+      </tr>
+      <tr class="board_item">
+        <td>
+          <span>[답변]</span>
+          동성로 스터디카페 ICAN 어떤가요 ? ㅋ
+        </td>
+        <td class="item_detail item-none">관광지</td>
+        <td class="item_detail item-none">1</td>
+        <td class="item_detail">2022.10.08</td>
+      </tr>
+      <tr class="board_item">
+        <td>
+          <span>[답변]</span>
+          동성로에 탕후루 집 있나요?
+        </td>
+        <td class="item_detail item-none">음식점</td>
+        <td class="item_detail item-none">1</td>
+        <td class="item_detail">2022.09.03</td>
+      </tr>
+    </table>
+
+    <!-- 페이지네이션 -->
+    <div class="page">
+      <img src="./img/arrow_leftleft.png" alt="" />
+      <img src="./img/arrow_left.png" alt="" />
+      <span class="first">1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <img src="./img/arrow_right.png" alt="" />
+      <img src="./img/arrow_rightright.png" alt="" />
     </div>
   </main>
 
