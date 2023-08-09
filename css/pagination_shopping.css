@@ -1,0 +1,40 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.button:disabled {
+  color: #b3b3b3;
+  pointer-events: none;
+}
+
+button,
+link {
+  color: #666666;
+}
+
+.button:hover {
+  color: #fff;
+  background: #9747FF;
+}
+
+.link:hover {
+  color: #fff;
+  background: #9747FF;
+}
+
+.link.active {
+  color: #fff;
+  background: #9747FF;
+}
+
+.links-group.active {
+  display: flex;
+}
+
+/* CSS 추가 */
+.links-group:not(.active) {
+  display: none;
+}
+
+.links-group {
+  column-gap: 12px;
+}

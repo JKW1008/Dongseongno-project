@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap%22");
+
+$size-1920-1px: 0.0521vw;
+$size-1080-1px: 0.0926vw;
+$size-768-1px: 0.1302vw;
+$size-430-1px: 0.2326vw;
+
+$my-font: "Noto Sans KR", sans-serif;
+
+$main-color: #f54747;
+$border-color: #ececec;
+$font-color_W: #efefef;
+$font-color_G: #959595;
+$font-main-color: #333333;
+
+body {
+  font-family: $my-font;
+  padding-top: 90px;
+}
+
+.sns_banner {
+  position: relative;
+  img {
+    width: 100%;
+    height: 450 * $size-1920-1px;
+  }
+  .main_title {
+    display: flex;
+    position: absolute;
+    bottom: 32%;
+
+    .map_title_text {
+      width: 98vw;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      p {
+        font-size: 78 * $size-1920-1px;
+        margin: 10px 0;
+        color: #fff;
+        span {
+          font-weight: 700;
+          font-size: 78 * $size-1920-1px;
+          color: $main-color;
+        }
+        &:first-child {
+          display: inline-block;
+          font-size: 78 * $size-1920-1px;
+          color: #fff;
+          font-size: 46 * $size-1920-1px;
+          font-weight: 900;
+          padding: 5px 10 * $size-1920-1px;
+          border-top: 2px solid $main-color;
+          border-bottom: 2px solid $main-color;
+        }
+        &:last-child {
+          color: #fff;
+          font-size: 18 * $size-1920-1px;
+          font-weight: 700;
+          margin-top: 14 * $size-1920-1px;
+          width: 705 * $size-1920-1px;
+          font-weight: 500;
+          font-family: Noto Sans;
+          line-height: 29px; /* 161.111% */
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .sns_banner {
+    position: relative;
+    img {
+      width: 100%;
+      height: 600 * $size-1920-1px;
+    }
+    .main_title {
+      display: flex;
+      position: absolute;
+      bottom: 20%;
+
+      .map_title_text {
+        width: 98vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p {
+          font-size: 78 * $size-1920-1px;
+          margin: 10px 0;
+          color: #fff;
+          span {
+            font-weight: 700;
+            color: $main-color;
+          }
+          &:first-child {
+            display: inline-block;
+            color: #fff;
+            font-size: 46 * $size-1920-1px;
+            font-weight: 900;
+            padding: 5px 10 * $size-1920-1px;
+            border-top: 2px solid $main-color;
+            border-bottom: 2px solid $main-color;
+          }
+          &:last-child {
+            width: 800 * $size-1920-1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sns_banner {
+    position: relative;
+    img {
+      width: 100%;
+      height: 300 * $size-768-1px;
+      content: url(../img/know_in_mobile.png);
+    }
+    .main_title {
+      display: flex;
+      position: absolute;
+      bottom: 34%;
+
+      .map_title_text {
+        width: 98vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p {
+          font-size: 78 * $size-1920-1px;
+          margin: 10px 0;
+          color: #fff;
+          span {
+            font-weight: 700;
+            color: $main-color;
+          }
+          &:first-child {
+            display: inline-block;
+            color: #fff;
+            font-size: 48 * $size-768-1px;
+            font-weight: 900;
+            padding: 5px 10 * $size-1920-1px;
+            border-top: 2px solid $main-color;
+            border-bottom: 2px solid $main-color;
+          }
+          &:last-child {
+            width: 800 * $size-1920-1px;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .sns_banner {
+    position: relative;
+    img {
+      width: 100%;
+      height: 300 * $size-430-1px;
+      content: url(../img/know_in_mobile.png);
+    }
+    .main_title {
+      display: flex;
+      position: absolute;
+      bottom: 34%;
+
+      .map_title_text {
+        width: 98vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p {
+          font-size: 78 * $size-1920-1px;
+          margin: 10px 0;
+          color: #fff;
+          span {
+            font-weight: 700;
+            color: $main-color;
+          }
+          &:first-child {
+            display: inline-block;
+            color: #fff;
+            font-size: 48 * $size-430-1px;
+            font-weight: 900;
+            padding: 5px 10 * $size-1920-1px;
+            border-top: 2px solid $main-color;
+            border-bottom: 2px solid $main-color;
+          }
+          &:last-child {
+            width: 800 * $size-1920-1px;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

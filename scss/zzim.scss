@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap%22");
+
+$size-1920-1px: 0.0521vw;
+$size-1080-1px: 0.0926vw;
+$size-768-1px: 0.1302vw;
+$size-430-1px: 0.2326vw;
+
+$my-font: "Noto Sans KR", sans-serif;
+
+$main-color: #f54747;
+$border-color: #ececec;
+$font-color_W: #efefef;
+$font-color_G: #959595;
+$font-main-color: #333333;
+
+body {
+  font-family: $my-font;
+}
+// PC 버전
+.zzim {
+  width: 80%;
+  padding-top: 90px;
+  margin: 0 auto;
+  font-family: $my-font;
+
+  .main_zzim_title {
+    margin: 80 * $size-1920-1px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .main_zzim_title::before {
+    content: "✨";
+    margin-right: 20px;
+  }
+  .main_zzim_title::after {
+    content: "✨";
+    margin-left: 20px;
+  }
+  .zzim_title {
+    margin-left: 50 * $size-1920-1px;
+    margin-bottom: 20 * $size-1920-1px;
+    font-size: 25 * $size-1920-1px;
+    font-weight: 700;
+    span {
+      margin-left: 10 * $size-1920-1px;
+    }
+    span::before {
+      content: "✔";
+      color: red;
+      margin-right: 20px;
+    }
+  }
+  .zzim_title_line {
+    width: 200px;
+    border-bottom: 1px solid #acacac;
+    margin-left: 30 * $size-1920-1px;
+  }
+
+  .zzim_icon {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 55 * $size-1920-1px;
+    display: flex;
+    justify-content: space-between;
+    .zzim_icon_item {
+      text-align: center;
+      p {
+        margin-top: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+  .zzim_icon {
+    cursor: pointer;
+    img {
+      width: 60 * $size-1920-1px;
+      font-weight: 700;
+      font-family: Noto Sans;
+    }
+    p {
+      font-size: 20 * $size-1920-1px;
+      font-weight: 700;
+    }
+  }
+
+  .zzim_item {
+    margin: 80 * $size-1920-1px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+
+    .zzim_item_list {
+      margin: 0 auto;
+      cursor: pointer;
+    }
+    .zzim_item_list_title {
+      display: flex;
+      justify-content: flex-start;
+      cursor: pointer;
+      > img {
+        width: 50 * $size-1920-1px;
+        padding-top: 10 * $size-1920-1px;
+        margin-left: 20 * $size-1920-1px;
+        margin-right: 30 * $size-1920-1px;
+      }
+      div {
+        font-size: 25 * $size-1920-1px;
+        margin-top: 6 * $size-1920-1px;
+        p:nth-child(1) {
+          font-weight: 600;
+          font-size: 26 * $size-1920-1px;
+          text-align: left;
+        }
+        p:nth-child(2) {
+          font-size: 16 * $size-1920-1px;
+          font-family: Noto Sans;
+          font-weight: 500;
+        }
+      }
+    }
+    img {
+      width: 400 * $size-1920-1px;
+      margin-bottom: 20px;
+      border-radius: 20px 20px 20px 0px;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+
+  // 태블릿 버전
+  @media screen and (max-width: 1080px) {
+    .zzim {
+      width: 80%;
+      padding-top: 90px;
+      margin: 0 auto;
+      font-family: $my-font;
+    }
+    .zzim_icon {
+      cursor: pointer;
+      img {
+        width: 50 * $size-1080-1px;
+      }
+      p {
+        font-size: 20 * $size-1080-1px;
+      }
+    }
+    .main_zzim_title {
+      text-align: center;
+      font-size: 30 * $size-1080-1px;
+      margin-bottom: 40px;
+    }
+    .zzim_title {
+      font-size: 28 * $size-1080-1px;
+      font-weight: 700;
+      span {
+        margin-left: 10 * $size-1920-1px;
+        width: 36 * $size-1080-1px;
+      }
+      span::before {
+        content: "✔";
+        color: red;
+        margin-right: 20px;
+      }
+    }
+    .zzim_title_line {
+      margin-left: 30 * $size-768-1px;
+    }
+    .zzim_icon img {
+      width: 50 * $size-1080-1px;
+    }
+    .zzim_item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30 * $size-768-1px;
+      img {
+        width: 280 * $size-768-1px;
+        margin-bottom: 20px;
+      }
+      p {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .zzim_item_list_title {
+        > img {
+          width: 50 * $size-1080-1px;
+        }
+        div {
+          margin-top: -5 * $size-1080-1px;
+          p:nth-child(1) {
+            font-weight: 600;
+            font-size: 26 * $size-1080-1px;
+            text-align: left;
+          }
+          p:nth-child(2) {
+            font-size: 16 * $size-1080-1px;
+            font-family: Noto Sans;
+            font-weight: 500;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  //모바일 버전
+  @media screen and (max-width: 500px) {
+    .zzim {
+      .zzim_icon {
+        width: 100%;
+      }
+    }
+    .zzim_icon {
+      margin: 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 60 * $size-430-1px;
+      margin-bottom: 70 * $size-430-1px;
+
+      img {
+        width: 50 * $size-430-1px;
+      }
+      p {
+        font-size: 20 * $size-430-1px;
+      }
+    }
+    .main_zzim_title {
+      font-size: 30 * $size-430-1px;
+      margin: 20px;
+      padding-top: 20px;
+    }
+    .zzim_title {
+      text-align: center;
+      font-size: 23 * $size-430-1px;
+      padding-right: 20px;
+      margin: 20px;
+      padding-top: 40px;
+      margin-bottom: 30 * $size-430-1px;
+    }
+    .zzim_title_line {
+      display: none;
+    }
+    .zzim_item {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      img {
+        width: 100%;
+      }
+      .zzim_item_list_title {
+        div {
+          font-size: 20 * $size-430-1px;
+        }
+      }
+      .zzim_item_list_title {
+        > img {
+          width: 50 * $size-430-1px;
+          margin-right: 12 * $size-430-1px;
+        }
+        div {
+          margin-top: -5 * $size-430-1px;
+          p:nth-child(1) {
+            font-weight: 600;
+            font-size: 22 * $size-430-1px;
+            text-align: left;
+          }
+          p:nth-child(2) {
+            font-size: 16 * $size-430-1px;
+            font-family: Noto Sans;
+            font-weight: 500;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

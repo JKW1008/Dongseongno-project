@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap%22");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.zzim {
+  width: 80%;
+  padding-top: 90px;
+  margin: 0 auto;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.zzim .main_zzim_title {
+  margin: 4.168vw;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.zzim .main_zzim_title::before {
+  content: "✨";
+  margin-right: 20px;
+}
+.zzim .main_zzim_title::after {
+  content: "✨";
+  margin-left: 20px;
+}
+.zzim .zzim_title {
+  margin-left: 2.605vw;
+  margin-bottom: 1.042vw;
+  font-size: 1.3025vw;
+  font-weight: 700;
+}
+.zzim .zzim_title span {
+  margin-left: 0.521vw;
+}
+.zzim .zzim_title span::before {
+  content: "✔";
+  color: red;
+  margin-right: 20px;
+}
+.zzim .zzim_title_line {
+  width: 200px;
+  border-bottom: 1px solid #acacac;
+  margin-left: 1.563vw;
+}
+.zzim .zzim_icon {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2.8655vw;
+  display: flex;
+  justify-content: space-between;
+}
+.zzim .zzim_icon .zzim_icon_item {
+  text-align: center;
+}
+.zzim .zzim_icon .zzim_icon_item p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+.zzim .zzim_icon {
+  cursor: pointer;
+}
+.zzim .zzim_icon img {
+  width: 3.126vw;
+  font-weight: 700;
+  font-family: Noto Sans;
+}
+.zzim .zzim_icon p {
+  font-size: 1.042vw;
+  font-weight: 700;
+}
+.zzim .zzim_item {
+  margin: 4.168vw 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+}
+.zzim .zzim_item .zzim_item_list {
+  margin: 0 auto;
+  cursor: pointer;
+}
+.zzim .zzim_item .zzim_item_list_title {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.zzim .zzim_item .zzim_item_list_title > img {
+  width: 2.605vw;
+  padding-top: 0.521vw;
+  margin-left: 1.042vw;
+  margin-right: 1.563vw;
+}
+.zzim .zzim_item .zzim_item_list_title div {
+  font-size: 1.3025vw;
+  margin-top: 0.3126vw;
+}
+.zzim .zzim_item .zzim_item_list_title div p:nth-child(1) {
+  font-weight: 600;
+  font-size: 1.3546vw;
+  text-align: left;
+}
+.zzim .zzim_item .zzim_item_list_title div p:nth-child(2) {
+  font-size: 0.8336vw;
+  font-family: Noto Sans;
+  font-weight: 500;
+}
+.zzim .zzim_item img {
+  width: 20.84vw;
+  margin-bottom: 20px;
+  border-radius: 20px 20px 20px 0px;
+}
+.zzim .zzim_item p {
+  margin-top: 10px;
+}
+@media screen and (max-width: 1080px) {
+  .zzim .zzim {
+    width: 80%;
+    padding-top: 90px;
+    margin: 0 auto;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .zzim .zzim_icon {
+    cursor: pointer;
+  }
+  .zzim .zzim_icon img {
+    width: 4.63vw;
+  }
+  .zzim .zzim_icon p {
+    font-size: 1.852vw;
+  }
+  .zzim .main_zzim_title {
+    text-align: center;
+    font-size: 2.778vw;
+    margin-bottom: 40px;
+  }
+  .zzim .zzim_title {
+    font-size: 2.5928vw;
+    font-weight: 700;
+  }
+  .zzim .zzim_title span {
+    margin-left: 0.521vw;
+    width: 3.3336vw;
+  }
+  .zzim .zzim_title span::before {
+    content: "✔";
+    color: red;
+    margin-right: 20px;
+  }
+  .zzim .zzim_title_line {
+    margin-left: 3.906vw;
+  }
+  .zzim .zzim_icon img {
+    width: 4.63vw;
+  }
+  .zzim .zzim_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.906vw;
+  }
+  .zzim .zzim_item img {
+    width: 36.456vw;
+    margin-bottom: 20px;
+  }
+  .zzim .zzim_item p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .zzim .zzim_item .zzim_item_list_title > img {
+    width: 4.63vw;
+  }
+  .zzim .zzim_item .zzim_item_list_title div {
+    margin-top: -0.463vw;
+  }
+  .zzim .zzim_item .zzim_item_list_title div p:nth-child(1) {
+    font-weight: 600;
+    font-size: 2.4076vw;
+    text-align: left;
+  }
+  .zzim .zzim_item .zzim_item_list_title div p:nth-child(2) {
+    font-size: 1.4816vw;
+    font-family: Noto Sans;
+    font-weight: 500;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 500px) {
+  .zzim .zzim .zzim_icon {
+    width: 100%;
+  }
+  .zzim .zzim_icon {
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 13.956vw;
+    margin-bottom: 16.282vw;
+  }
+  .zzim .zzim_icon img {
+    width: 11.63vw;
+  }
+  .zzim .zzim_icon p {
+    font-size: 4.652vw;
+  }
+  .zzim .main_zzim_title {
+    font-size: 6.978vw;
+    margin: 20px;
+    padding-top: 20px;
+  }
+  .zzim .zzim_title {
+    text-align: center;
+    font-size: 5.3498vw;
+    padding-right: 20px;
+    margin: 20px;
+    padding-top: 40px;
+    margin-bottom: 6.978vw;
+  }
+  .zzim .zzim_title_line {
+    display: none;
+  }
+  .zzim .zzim_item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .zzim .zzim_item img {
+    width: 100%;
+  }
+  .zzim .zzim_item .zzim_item_list_title div {
+    font-size: 4.652vw;
+  }
+  .zzim .zzim_item .zzim_item_list_title > img {
+    width: 11.63vw;
+    margin-right: 2.7912vw;
+  }
+  .zzim .zzim_item .zzim_item_list_title div {
+    margin-top: -1.163vw;
+  }
+  .zzim .zzim_item .zzim_item_list_title div p:nth-child(1) {
+    font-weight: 600;
+    font-size: 5.1172vw;
+    text-align: left;
+  }
+  .zzim .zzim_item .zzim_item_list_title div p:nth-child(2) {
+    font-size: 3.7216vw;
+    font-family: Noto Sans;
+    font-weight: 500;
+    text-align: left;
+  }
+}

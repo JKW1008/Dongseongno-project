@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+dialog {
+  width: 390px;
+  height: 540px;
+  position: fixed;
+  /* 모달 창 크기의 반을 빼주어 중간에 위치시켜줌! */
+  top: calc(50vh - 270px);
+  margin: 0 auto;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border: 0;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 30px 10px 30px;
+}
+
+/*  */
+
+dialog h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 13px;
+}
+
+dialog p {
+  margin-top: 24px;
+  font-size: 16px;
+  color: #555;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+dialog button {
+  margin-top: 20px;
+}
+
+.inputbox {
+  position: relative;
+  margin: 10px 0;
+  width: 100%;
+  height: 52px;
+  border: 2px solid #ECECEC;
+  border-radius: 10px;
+}
+
+.inputbox label {
+  /* background: white; */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 35px 0 20px;
+  color: black;
+  color: #7E7E7E;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.forget {
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.forget label {
+  margin-top: 15px;
+  color: #7E7E7E;
+}
+
+.forget label a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 3px;
+}
+
+.forget label a:hover {
+  text-decoration: underline;
+}
+
+button.login_btn,
+button.register_btn {
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  background: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white;
+}
+
+button.register_btn {
+  font-size: .9em;
+  color: #08f;
+  text-align: center;
+  margin: 10px 0 40px;
+  background-color: white;
+}
+
+.border_line {
+  margin: 0 auto;
+  width: 100%;
+  height: 1px;
+  border-top: 2px solid #ECECEC;
+}
+
+.sns_login {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  bottom: 42px;
+  background: white;
+  color: var(--sub-text, #7E7E7E);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.close_btn {
+  background: none;
+  color: #7E7E7E;
+  border: none;
+  font-size: 1.2em;
+
+  position: absolute;
+  right: 18px;
+  top: -10px;
+}

@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap%22");
+select,
+input {
+  cursor: pointer;
+}
+select:focus-visible,
+input:focus-visible {
+  outline: none;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.question_wrapper {
+  width: 80%;
+  padding-top: 90px;
+  margin: 0 auto;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.question_wrapper .main_question_title {
+  margin: 4.168vw;
+  font-size: 1.563vw;
+  font-weight: 700;
+  text-align: center;
+}
+.question_wrapper .main_question_title::before {
+  content: "✨";
+  margin-right: 20px;
+}
+.question_wrapper .main_question_title::after {
+  content: "✨";
+  margin-left: 20px;
+}
+.question_wrapper .question_title {
+  margin-left: 2.605vw;
+  margin-bottom: 1.042vw;
+  font-size: 1.3025vw;
+  font-weight: 700;
+}
+.question_wrapper .question_title span {
+  margin-left: 0.521vw;
+}
+.question_wrapper .question_title span::before {
+  content: "✔";
+  color: red;
+  margin-right: 20px;
+}
+.question_wrapper .question_title_line {
+  width: 200px;
+  border-bottom: 1px solid #acacac;
+  margin-left: 1.563vw;
+}
+.question_wrapper .search_space {
+  width: 100%;
+  height: 80px;
+  margin-top: 100px;
+  background-color: #d9d9d9;
+  text-align: center;
+  position: relative;
+}
+.question_wrapper .search_space .search_list {
+  width: 6.773vw;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  padding-left: 5px;
+}
+.question_wrapper .search_space .search_list:focus-visible {
+  outline: none;
+}
+.question_wrapper .search_space input {
+  height: 50px;
+  margin-top: 15px;
+  width: 28.655vw;
+  background-color: #fff;
+  border: none;
+  padding-left: 10px;
+  color: black;
+}
+.question_wrapper .search_space input:focus-visible {
+  outline: none;
+}
+.question_wrapper .search_space button {
+  border: none;
+  margin: 0;
+  position: absolute;
+  right: 22.403vw;
+  top: 35px;
+  background: none;
+  cursor: pointer;
+}
+.question_wrapper .search_space button i {
+  margin-right: 10px;
+  float: right;
+}
+.question_wrapper .search_space button i::before {
+  margin-right: 10px;
+}
+.question_wrapper .list_select {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.question_wrapper .list_select p {
+  margin-left: 15px;
+}
+.question_wrapper .board {
+  width: 100%;
+  height: 300px;
+  margin: 40px 0;
+  line-height: 50px;
+}
+.question_wrapper .board th {
+  font-weight: 700;
+  height: 30px;
+  border-top: 2px solid black;
+}
+.question_wrapper .board .board_item {
+  border-top: 1px solid #939393;
+  cursor: pointer;
+}
+.question_wrapper .board .board_item td span {
+  margin-left: 10px;
+  font-weight: 500;
+  color: #f54747;
+}
+.question_wrapper .board .board_item .item_detail {
+  text-align: center;
+  color: #6d6d6d;
+}
+.question_wrapper .page {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 2.084vw;
+       column-gap: 2.084vw;
+  margin-bottom: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+.question_wrapper .page .first {
+  color: #f54747;
+}
+
+@media screen and (max-width: 1080px) {
+  .question_wrapper .main_question_title {
+    font-size: 3.241vw;
+  }
+  .question_wrapper .question_title {
+    font-size: 2.5928vw;
+  }
+  .question_wrapper .search_space {
+    text-align: center;
+  }
+  .question_wrapper .search_space .search_list {
+    width: 20%;
+  }
+  .question_wrapper .search_space input {
+    width: 70%;
+  }
+  .question_wrapper .search_space button {
+    right: 3.906vw;
+  }
+  .question_wrapper .list_select {
+    font-size: 1.953vw;
+  }
+  .question_wrapper .board {
+    font-size: 1.953vw;
+  }
+  .question_wrapper .item-none {
+    display: none;
+  }
+}
+@media screen and (max-width: 430px) {
+  .question_wrapper .main_question_title {
+    font-size: 8.141vw;
+    margin-top: 50px;
+  }
+  .question_wrapper .question_title {
+    margin-top: 60px;
+    font-size: 6.5128vw;
+  }
+  .question_wrapper .search_space {
+    text-align: center;
+  }
+  .question_wrapper .search_space .search_list {
+    width: 25%;
+  }
+  .question_wrapper .search_space input {
+    width: 64%;
+  }
+  .question_wrapper .search_space button {
+    right: 3.906vw;
+  }
+  .question_wrapper .search_list {
+    width: 23.26vw;
+  }
+  .question_wrapper .list_select {
+    font-size: 2.7912vw;
+  }
+  .question_wrapper .list_select .list_answer {
+    font-size: 2.7912vw;
+  }
+  .question_wrapper .board {
+    font-size: 2.7912vw;
+  }
+  .question_wrapper .board .board_item td {
+    overflow: hidden;
+  }
+}

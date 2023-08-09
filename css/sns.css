@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+main {
+  font-family: "Noto Sans KR", sans-serif;
+  padding-top: 90px;
+}
+main section.sns_banner {
+  position: relative;
+}
+main section.sns_banner .main_banner {
+  margin-top: 2.1882vw;
+  margin-bottom: 2.8655vw;
+  width: 100%;
+  height: 18.4955vw;
+}
+main section.sns_banner .main_title {
+  display: flex;
+  position: absolute;
+  bottom: 32%;
+}
+main section.sns_banner .main_title img {
+  width: 3.126vw;
+  height: 2.5008vw;
+  margin-left: 3.2302vw;
+  margin-right: 1.2504vw;
+}
+main section.sns_banner .main_title .map_title_text p {
+  margin-top: -0.2084vw;
+}
+main section.sns_banner .main_title .map_title_text p:first-child {
+  color: #fff;
+  font-size: 2.3966vw;
+  font-weight: 900;
+}
+main section.sns_banner .main_title .map_title_text p:last-child {
+  color: #fff;
+  font-size: 1.3546vw;
+  font-weight: 700;
+  margin-top: 0.7294vw;
+}
+main section.sns_banner .line {
+  width: 100%;
+  height: 0.7815vw;
+  background-color: #eee;
+}
+main section.sns_banner .hashtag {
+  display: flex;
+  justify-content: center;
+  gap: 0.7815vw;
+  position: relative;
+  bottom: 1.9vw;
+  /* 각 버튼별 컬러 설정 */
+}
+main section.sns_banner .hashtag button {
+  padding: 0.521vw 1.042vw;
+  border-radius: 30px;
+  font-size: 1.2504vw;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+main section.sns_banner .hashtag .tag-button.active {
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+main section.sns_banner .hashtag .tag-button[data-tag=관광지] {
+  --border-color: #d35f85;
+  --text-color: #d35f85;
+}
+main section.sns_banner .hashtag .tag-button[data-tag=맛집] {
+  --border-color: #f54747;
+  --text-color: #f54747;
+}
+main section.sns_banner .hashtag .tag-button[data-tag=쇼핑] {
+  --border-color: #9747ff;
+  --text-color: #9747ff;
+}
+main section.sns_banner .hashtag .tag-button[data-tag=호텔] {
+  --border-color: #28a342;
+  --text-color: #28a342;
+}
+main section.youtube_items {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3.126vw;
+}
+main section.youtube_items p {
+  font-size: 1.2504vw;
+  margin-top: 0.521vw;
+  margin-bottom: 1.042vw;
+}
+main section.youtube_items div#youtube_results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.3445vw;
+}
+main section.youtube_items div#youtube_results img {
+  width: 23.445vw;
+  height: 13.2334vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main section.youtube_items div#youtube_results p {
+  font-size: 1.042vw;
+  text-align: center;
+}
+
+@media (max-width: 876px) {
+  main section.sns_banner > img {
+    content: url(../img/sns_tablet_img.png);
+  }
+  main section.sns_banner .main_banner {
+    margin-top: 0;
+    margin-bottom: 9.3744vw;
+    width: 100%;
+    height: 45.57vw;
+  }
+  main section.sns_banner .main_title {
+    display: flex;
+    position: absolute;
+    bottom: 40%;
+  }
+  main section.sns_banner .main_title img {
+    width: 7.0308vw;
+    height: 5.208vw;
+    margin-left: 3.906vw;
+    margin-right: 1.8228vw;
+  }
+  main section.sns_banner .main_title .map_title_text p {
+    margin-top: -0.7812vw;
+  }
+  main section.sns_banner .main_title .map_title_text p:first-child {
+    color: #fff;
+    font-size: 5.9892vw;
+    font-weight: 900;
+  }
+  main section.sns_banner .main_title .map_title_text p:last-child {
+    color: #fff;
+    font-size: 3.1248vw;
+    font-weight: 700;
+    margin-top: 1.953vw;
+    margin-left: -8.5932vw;
+  }
+  main section.sns_banner .line {
+    width: 100%;
+    height: 1.953vw;
+    background-color: #eee;
+  }
+  main section.sns_banner .hashtag {
+    display: flex;
+    justify-content: center;
+    gap: 6.51vw;
+    position: relative;
+    bottom: 4.5vw;
+  }
+  main section.sns_banner .hashtag button {
+    padding: 1.302vw 2.604vw;
+    border-radius: 30px;
+    font-size: 3.1248vw;
+  }
+  main section.youtube_items {
+    width: 99%;
+    margin: 0 auto;
+    padding-bottom: 10.416vw;
+  }
+  main section.youtube_items p {
+    font-size: 3.1248vw;
+    margin-top: 1.302vw;
+    margin-bottom: 2.604vw;
+  }
+  main section.youtube_items div#youtube_results {
+    gap: 3.255vw;
+  }
+  main section.youtube_items div#youtube_results img {
+    width: 45.57vw;
+    height: 26.04vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  main section.youtube_items div#youtube_results p {
+    font-size: 2.0832vw;
+    text-align: center;
+  }
+}
+@media (max-width: 430px) {
+  main section.sns_banner > img {
+    content: url(../img/sns_mobile_img.png);
+  }
+  main section.sns_banner .main_banner {
+    margin-top: 0;
+    margin-bottom: 13.956vw;
+    width: 100%;
+    height: 81.41vw;
+  }
+  main section.sns_banner .main_title {
+    display: flex;
+    position: absolute;
+    bottom: 40%;
+  }
+  main section.sns_banner .main_title img {
+    width: 13.2582vw;
+    height: 9.304vw;
+    margin-left: 6.978vw;
+    margin-right: 3.2564vw;
+  }
+  main section.sns_banner .main_title .map_title_text p:first-child {
+    color: #fff;
+    font-size: 8.3736vw;
+    font-weight: 900;
+  }
+  main section.sns_banner .main_title .map_title_text p:last-child {
+    color: #fff;
+    font-size: 5.1172vw;
+    font-weight: 700;
+    margin-top: 4.652vw;
+    margin-left: -15.3516vw;
+  }
+  main section.sns_banner .line {
+    width: 100%;
+    height: 3.489vw;
+    background-color: #eee;
+  }
+  main section.sns_banner .hashtag {
+    display: flex;
+    justify-content: center;
+    gap: 2.326vw;
+    position: relative;
+    bottom: 7.1vw;
+  }
+  main section.sns_banner .hashtag button {
+    padding: 1.8608vw 3.7216vw;
+    border-radius: 30px;
+    font-size: 4.1868vw;
+  }
+  main section.youtube_items {
+    width: 98%;
+    margin: 0 auto;
+    padding-bottom: 9.304vw;
+  }
+  main section.youtube_items p {
+    font-size: 5.5824vw;
+    margin-top: 2.326vw;
+    margin-bottom: 4.652vw;
+    margin-left: 3.489vw;
+  }
+  main section.youtube_items div#youtube_results {
+    gap: 0;
+  }
+  main section.youtube_items div#youtube_results img {
+    width: 90.9466vw;
+    height: 52.1024vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  main section.youtube_items div#youtube_results p {
+    font-size: 4.652vw;
+    text-align: center;
+    margin-top: 6.978vw;
+    margin-bottom: 13.956vw;
+  }
+}

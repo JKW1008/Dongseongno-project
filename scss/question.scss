@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap%22");
+
+$size-1920-1px: 0.0521vw;
+$size-1080-1px: 0.0926vw;
+$size-768-1px: 0.1302vw;
+$size-430-1px: 0.2326vw;
+
+$my-font: "Noto Sans KR", sans-serif;
+
+$main-color: #f54747;
+$border-color: #ececec;
+$font-color_W: #efefef;
+$font-color_G: #959595;
+$font-main-color: #333333;
+
+select,
+input {
+  cursor: pointer;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+body {
+  font-family: $my-font;
+}
+
+.question_wrapper {
+  width: 80%;
+  padding-top: 90px;
+  margin: 0 auto;
+  font-family: $my-font;
+  .main_question_title {
+    margin: 80 * $size-1920-1px;
+    font-size: 30 * $size-1920-1px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .main_question_title::before {
+    content: "✨";
+    margin-right: 20px;
+  }
+  .main_question_title::after {
+    content: "✨";
+    margin-left: 20px;
+  }
+  .question_title {
+    margin-left: 50 * $size-1920-1px;
+    margin-bottom: 20 * $size-1920-1px;
+    font-size: 25 * $size-1920-1px;
+    font-weight: 700;
+    span {
+      margin-left: 10 * $size-1920-1px;
+    }
+    span::before {
+      content: "✔";
+      color: red;
+      margin-right: 20px;
+    }
+  }
+  .question_title_line {
+    width: 200px;
+    border-bottom: 1px solid #acacac;
+    margin-left: 30 * $size-1920-1px;
+  }
+
+  //search
+  .search_space {
+    width: 100%;
+    height: 80px;
+    margin-top: 100px;
+    background-color: #d9d9d9;
+    text-align: center;
+    position: relative;
+    .search_list {
+      width: 130 * $size-1920-1px;
+      height: 50px;
+      background-color: #fff;
+      border: none;
+      padding-left: 5px;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    input {
+      height: 50px;
+      margin-top: 15px;
+      width: 550 * $size-1920-1px;
+      background-color: #fff;
+      border: none;
+      padding-left: 10px;
+      color: black;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+    button {
+      border: none;
+      margin: 0;
+      position: absolute;
+      right: 430 * $size-1920-1px;
+      top: 35px;
+      background: none;
+      cursor: pointer;
+      i {
+        margin-right: 10px;
+        float: right;
+      }
+      i::before {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  // 셀렉트
+  .list_select {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    p {
+      margin-left: 15px;
+    }
+  }
+
+  // 글 목록
+  .board {
+    width: 100%;
+    height: 300px;
+    margin: 40px 0;
+    line-height: 50px;
+    th {
+      font-weight: 700;
+      height: 30px;
+      border-top: 2px solid black;
+    }
+    .board_item {
+      border-top: 1px solid #939393;
+      cursor: pointer;
+      td span {
+        margin-left: 10px;
+        font-weight: 500;
+        color: $main-color;
+      }
+      .item_detail {
+        text-align: center;
+        color: #6d6d6d;
+      }
+    }
+  }
+
+  //페이지네이션
+  .page {
+    display: flex;
+    justify-content: center;
+    column-gap: 40 * $size-1920-1px;
+    margin-bottom: 40px;
+    width: 100%;
+    cursor: pointer;
+    .first {
+      color: #f54747;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .question_wrapper {
+    .main_question_title {
+      font-size: 35 * $size-1080-1px;
+    }
+    .question_title {
+      font-size: 28 * $size-1080-1px;
+    }
+    .search_space {
+      text-align: center;
+      .search_list {
+        width: 20%;
+      }
+      input {
+        width: 70%;
+      }
+      button {
+        right: 30 * $size-768-1px;
+      }
+    }
+    .list_select {
+      font-size: 15 * $size-768-1px;
+    }
+    .board {
+      font-size: 15 * $size-768-1px;
+    }
+    .item-none {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .question_wrapper {
+    .main_question_title {
+      font-size: 35 * $size-430-1px;
+      margin-top: 50px;
+    }
+    .question_title {
+      margin-top: 60px;
+      font-size: 28 * $size-430-1px;
+    }
+    .search_space {
+      text-align: center;
+
+      .search_list {
+        width: 25%;
+      }
+      input {
+        width: 64%;
+      }
+      button {
+        right: 30 * $size-768-1px;
+      }
+    }
+    .search_list {
+      width: 100 * $size-430-1px;
+    }
+    .list_select {
+      font-size: 12 * $size-430-1px;
+      .list_answer {
+        font-size: 12 * $size-430-1px;
+      }
+    }
+    .board {
+      font-size: 12 * $size-430-1px;
+      .board_item {
+        td {
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
