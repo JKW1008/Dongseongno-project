@@ -425,6 +425,9 @@ section.knowledge_in {
           padding: 10 * $size-1920-1px 15 * $size-1920-1px;
           color: white;
           margin-right: 40 * $size-1920-1px;
+          a {
+            color: white;
+          }
         }
         &:nth-child(2) {
           border-radius: 10px;
@@ -432,6 +435,9 @@ section.knowledge_in {
           border: none;
           padding: 10 * $size-1920-1px 15 * $size-1920-1px;
           color: white;
+          a {
+            color: white;
+          }
         }
       }
     }
