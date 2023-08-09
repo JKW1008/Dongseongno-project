@@ -360,11 +360,17 @@ section.knowledge_in .knowledge_title .knowledge_btns button:nth-child(1) {
   color: white;
   margin-right: 2.084vw;
 }
+section.knowledge_in .knowledge_title .knowledge_btns button:nth-child(1) a {
+  color: white;
+}
 section.knowledge_in .knowledge_title .knowledge_btns button:nth-child(2) {
   border-radius: 10px;
   background: #28a342;
   border: none;
   padding: 0.521vw 0.7815vw;
+  color: white;
+}
+section.knowledge_in .knowledge_title .knowledge_btns button:nth-child(2) a {
   color: white;
 }
 section.knowledge_in .knowledge_notice {
