@@ -68,7 +68,7 @@ main {
     .hashtag {
       display: flex;
       justify-content: center;
-      gap: 10 * $size-1920-1px;
+      gap: 15 * $size-1920-1px;
 
       position: relative;
       bottom: 1.9vw;
@@ -79,7 +79,6 @@ main {
         font-size: 24 * $size-1920-1px;
         background-color: #fff;
         border: 1px solid #aaa;
-
         cursor: pointer;
       }
 
@@ -94,7 +93,7 @@ main {
         --text-color: #d35f85;
       }
 
-      .tag-button[data-tag="음식"] {
+      .tag-button[data-tag="맛집"] {
         --border-color: #f54747;
         --text-color: #f54747;
       }
@@ -104,7 +103,7 @@ main {
         --text-color: #9747ff;
       }
 
-      .tag-button[data-tag="숙박"] {
+      .tag-button[data-tag="호텔"] {
         --border-color: #28a342;
         --text-color: #28a342;
       }
@@ -138,7 +137,7 @@ main {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 876px) {
   main {
     section.sns_banner {
       > img {
@@ -220,7 +219,7 @@ main {
           border-radius: 10px;
         }
         p {
-          font-size: 20 * $size-768-1px;
+          font-size: 16 * $size-768-1px;
           text-align: center;
         }
       }

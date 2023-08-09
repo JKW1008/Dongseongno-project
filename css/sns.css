@@ -50,7 +50,7 @@ main section.sns_banner .line {
 main section.sns_banner .hashtag {
   display: flex;
   justify-content: center;
-  gap: 0.521vw;
+  gap: 0.7815vw;
   position: relative;
   bottom: 1.9vw;
   /* 각 버튼별 컬러 설정 */
@@ -71,7 +71,7 @@ main section.sns_banner .hashtag .tag-button[data-tag=관광지] {
   --border-color: #d35f85;
   --text-color: #d35f85;
 }
-main section.sns_banner .hashtag .tag-button[data-tag=음식] {
+main section.sns_banner .hashtag .tag-button[data-tag=맛집] {
   --border-color: #f54747;
   --text-color: #f54747;
 }
@@ -79,7 +79,7 @@ main section.sns_banner .hashtag .tag-button[data-tag=쇼핑] {
   --border-color: #9747ff;
   --text-color: #9747ff;
 }
-main section.sns_banner .hashtag .tag-button[data-tag=숙박] {
+main section.sns_banner .hashtag .tag-button[data-tag=호텔] {
   --border-color: #28a342;
   --text-color: #28a342;
 }
@@ -110,7 +110,7 @@ main section.youtube_items div#youtube_results p {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 876px) {
   main section.sns_banner > img {
     content: url(../img/sns_tablet_img.png);
   }
@@ -184,7 +184,7 @@ main section.youtube_items div#youtube_results p {
     border-radius: 10px;
   }
   main section.youtube_items div#youtube_results p {
-    font-size: 2.604vw;
+    font-size: 2.0832vw;
     text-align: center;
   }
 }

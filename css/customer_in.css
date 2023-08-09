@@ -14,7 +14,7 @@ body {
 .sns_banner .main_title {
   display: flex;
   position: absolute;
-  bottom: 32%;
+  bottom: 34%;
 }
 .sns_banner .main_title .map_title_text {
   width: 98vw;
@@ -48,7 +48,7 @@ body {
   font-size: 0.9378vw;
   font-weight: 700;
   margin-top: 0.7294vw;
-  width: 36.7305vw;
+  width: 38.554vw;
   font-weight: 500;
   font-family: Noto Sans;
   line-height: 29px; /* 161.111% */
@@ -104,7 +104,7 @@ body {
   .sns_banner img {
     width: 100%;
     height: 39.06vw;
-    content: url(../img/know_in_mobile.png);
+    content: url(../img/customer_mobile.png);
   }
   .sns_banner .main_title {
     display: flex;
@@ -125,7 +125,8 @@ body {
   }
   .sns_banner .main_title .map_title_text p span {
     font-weight: 700;
-    color: #f54747;
+    color: #fff;
+    font-size: 10.1556vw;
   }
   .sns_banner .main_title .map_title_text p:first-child {
     display: inline-block;
@@ -133,8 +134,8 @@ body {
     font-size: 6.2496vw;
     font-weight: 900;
     padding: 5px 0.521vw;
-    border-top: 2px solid #f54747;
-    border-bottom: 2px solid #f54747;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
   }
   .sns_banner .main_title .map_title_text p:last-child {
     width: 41.68vw;
@@ -148,7 +149,6 @@ body {
   .sns_banner img {
     width: 100%;
     height: 69.78vw;
-    content: url(../img/know_in_mobile.png);
   }
   .sns_banner .main_title {
     display: flex;
@@ -169,7 +169,8 @@ body {
   }
   .sns_banner .main_title .map_title_text p span {
     font-weight: 700;
-    color: #f54747;
+    color: #fff;
+    font-size: 11.1648vw;
   }
   .sns_banner .main_title .map_title_text p:first-child {
     display: inline-block;
@@ -177,8 +178,8 @@ body {
     font-size: 11.1648vw;
     font-weight: 900;
     padding: 5px 0.521vw;
-    border-top: 2px solid #f54747;
-    border-bottom: 2px solid #f54747;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
   }
   .sns_banner .main_title .map_title_text p:last-child {
     width: 41.68vw;

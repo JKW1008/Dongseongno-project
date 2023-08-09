@@ -160,38 +160,61 @@ body {
       color: #f54747;
     }
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .question_wrapper {
-      .main_question_title {
-        font-size: 20 * $size-768-1px;
-      }
-      .question_title {
-        font-size: 15 * $size-768-1px;
-      }
-      .search_space {
-        .search_list {
-          width: 100 * $size-768-1px;
-        }
-        button {
-          right: 140 * $size-768-1px;
-        }
-      }
-      .list_select {
-        font-size: 15 * $size-768-1px;
-      }
-      .board {
-        font-size: 15 * $size-768-1px;
-      }
-    }
-  }
-  @media screen and (max-width: 430px) {
+@media screen and (max-width: 1080px) {
+  .question_wrapper {
     .main_question_title {
-      font-size: 20 * $size-430-1px;
-      margin-top: 30px;
+      font-size: 35 * $size-1080-1px;
     }
     .question_title {
-      margin-top: 30px;
+      font-size: 28 * $size-1080-1px;
+    }
+    .search_space {
+      text-align: center;
+      .search_list {
+        width: 20%;
+      }
+      input {
+        width: 70%;
+      }
+      button {
+        right: 30 * $size-768-1px;
+      }
+    }
+    .list_select {
+      font-size: 15 * $size-768-1px;
+    }
+    .board {
+      font-size: 15 * $size-768-1px;
+    }
+    .item-none {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .question_wrapper {
+    .main_question_title {
+      font-size: 35 * $size-430-1px;
+      margin-top: 50px;
+    }
+    .question_title {
+      margin-top: 60px;
+      font-size: 28 * $size-430-1px;
+    }
+    .search_space {
+      text-align: center;
+
+      .search_list {
+        width: 25%;
+      }
+      input {
+        width: 64%;
+      }
+      button {
+        right: 30 * $size-768-1px;
+      }
     }
     .search_list {
       width: 100 * $size-430-1px;
@@ -204,8 +227,10 @@ body {
     }
     .board {
       font-size: 12 * $size-430-1px;
-      .item-none {
-        display: none;
+      .board_item {
+        td {
+          overflow: hidden;
+        }
       }
     }
   }

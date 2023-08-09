@@ -142,33 +142,56 @@ body {
 .question_wrapper .page .first {
   color: #f54747;
 }
-@media screen and (max-width: 768px) {
-  .question_wrapper .question_wrapper .main_question_title {
-    font-size: 2.604vw;
+
+@media screen and (max-width: 1080px) {
+  .question_wrapper .main_question_title {
+    font-size: 3.241vw;
   }
-  .question_wrapper .question_wrapper .question_title {
+  .question_wrapper .question_title {
+    font-size: 2.5928vw;
+  }
+  .question_wrapper .search_space {
+    text-align: center;
+  }
+  .question_wrapper .search_space .search_list {
+    width: 20%;
+  }
+  .question_wrapper .search_space input {
+    width: 70%;
+  }
+  .question_wrapper .search_space button {
+    right: 3.906vw;
+  }
+  .question_wrapper .list_select {
     font-size: 1.953vw;
   }
-  .question_wrapper .question_wrapper .search_space .search_list {
-    width: 13.02vw;
-  }
-  .question_wrapper .question_wrapper .search_space button {
-    right: 18.228vw;
-  }
-  .question_wrapper .question_wrapper .list_select {
+  .question_wrapper .board {
     font-size: 1.953vw;
   }
-  .question_wrapper .question_wrapper .board {
-    font-size: 1.953vw;
+  .question_wrapper .item-none {
+    display: none;
   }
 }
 @media screen and (max-width: 430px) {
   .question_wrapper .main_question_title {
-    font-size: 4.652vw;
-    margin-top: 30px;
+    font-size: 8.141vw;
+    margin-top: 50px;
   }
   .question_wrapper .question_title {
-    margin-top: 30px;
+    margin-top: 60px;
+    font-size: 6.5128vw;
+  }
+  .question_wrapper .search_space {
+    text-align: center;
+  }
+  .question_wrapper .search_space .search_list {
+    width: 25%;
+  }
+  .question_wrapper .search_space input {
+    width: 64%;
+  }
+  .question_wrapper .search_space button {
+    right: 3.906vw;
   }
   .question_wrapper .search_list {
     width: 23.26vw;
@@ -182,7 +205,7 @@ body {
   .question_wrapper .board {
     font-size: 2.7912vw;
   }
-  .question_wrapper .board .item-none {
-    display: none;
+  .question_wrapper .board .board_item td {
+    overflow: hidden;
   }
 }

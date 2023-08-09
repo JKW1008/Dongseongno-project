@@ -71,8 +71,17 @@ body {
       }
     }
   }
-  .zzim_icon img {
-    width: 50 * $size-1920-1px;
+  .zzim_icon {
+    cursor: pointer;
+    img {
+      width: 60 * $size-1920-1px;
+      font-weight: 700;
+      font-family: Noto Sans;
+    }
+    p {
+      font-size: 20 * $size-1920-1px;
+      font-weight: 700;
+    }
   }
 
   .zzim_item {
@@ -83,22 +92,21 @@ body {
 
     .zzim_item_list {
       margin: 0 auto;
-      > img {
-        width: 400 * $size-1920-1px;
-        height: 300 * $size-1920-1px;
-        object-fit: cover;
-      }
+      cursor: pointer;
     }
     .zzim_item_list_title {
       display: flex;
-      justify-content: space-around;
-      padding: 0 30px;
-      img {
+      justify-content: flex-start;
+      cursor: pointer;
+      > img {
         width: 50 * $size-1920-1px;
         padding-top: 10 * $size-1920-1px;
+        margin-left: 20 * $size-1920-1px;
+        margin-right: 30 * $size-1920-1px;
       }
       div {
         font-size: 25 * $size-1920-1px;
+        margin-top: 6 * $size-1920-1px;
         p:nth-child(1) {
           font-weight: 600;
           font-size: 26 * $size-1920-1px;
@@ -117,7 +125,6 @@ body {
       border-radius: 20px 20px 20px 0px;
     }
     p {
-      text-align: center;
       margin-top: 10px;
     }
   }
@@ -130,19 +137,38 @@ body {
       margin: 0 auto;
       font-family: $my-font;
     }
+    .zzim_icon {
+      cursor: pointer;
+      img {
+        width: 50 * $size-1080-1px;
+      }
+      p {
+        font-size: 20 * $size-1080-1px;
+      }
+    }
     .main_zzim_title {
       text-align: center;
-      font-size: 25 * $size-768-1px;
+      font-size: 30 * $size-1080-1px;
       margin-bottom: 40px;
     }
     .zzim_title {
-      font-size: 15px;
+      font-size: 28 * $size-1080-1px;
+      font-weight: 700;
+      span {
+        margin-left: 10 * $size-1920-1px;
+        width: 36 * $size-1080-1px;
+      }
+      span::before {
+        content: "✔";
+        color: red;
+        margin-right: 20px;
+      }
     }
     .zzim_title_line {
       margin-left: 30 * $size-768-1px;
     }
     .zzim_icon img {
-      width: 30 * $size-768-1px;
+      width: 50 * $size-1080-1px;
     }
     .zzim_item {
       display: grid;
@@ -156,27 +182,63 @@ body {
         text-align: center;
         margin-top: 10px;
       }
-    }
-    .zzim_item_list_title {
-      div {
-        font-size: 30 * $size-1920-1px;
+      .zzim_item_list_title {
+        > img {
+          width: 50 * $size-1080-1px;
+        }
+        div {
+          margin-top: -5 * $size-1080-1px;
+          p:nth-child(1) {
+            font-weight: 600;
+            font-size: 26 * $size-1080-1px;
+            text-align: left;
+          }
+          p:nth-child(2) {
+            font-size: 16 * $size-1080-1px;
+            font-family: Noto Sans;
+            font-weight: 500;
+            text-align: left;
+          }
+        }
       }
     }
   }
 
   //모바일 버전
   @media screen and (max-width: 500px) {
+    .zzim {
+      .zzim_icon {
+        width: 100%;
+      }
+    }
+    .zzim_icon {
+      margin: 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 60 * $size-430-1px;
+      margin-bottom: 70 * $size-430-1px;
+
+      img {
+        width: 50 * $size-430-1px;
+      }
+      p {
+        font-size: 20 * $size-430-1px;
+      }
+    }
     .main_zzim_title {
-      font-size: 23 * $size-430-1px;
+      font-size: 30 * $size-430-1px;
       margin: 20px;
       padding-top: 20px;
     }
     .zzim_title {
       text-align: center;
-      font-size: 15 * $size-430-1px;
+      font-size: 23 * $size-430-1px;
       padding-right: 20px;
       margin: 20px;
       padding-top: 40px;
+      margin-bottom: 30 * $size-430-1px;
     }
     .zzim_title_line {
       display: none;
@@ -192,15 +254,25 @@ body {
           font-size: 20 * $size-430-1px;
         }
       }
-    }
-    .zzim_item_list_title {
-      padding: 0;
-    }
-    .zzim_icon {
-      width: 70%;
-      margin-top: 30px;
-      img {
-        width: 30px;
+      .zzim_item_list_title {
+        > img {
+          width: 50 * $size-430-1px;
+          margin-right: 12 * $size-430-1px;
+        }
+        div {
+          margin-top: -5 * $size-430-1px;
+          p:nth-child(1) {
+            font-weight: 600;
+            font-size: 22 * $size-430-1px;
+            text-align: left;
+          }
+          p:nth-child(2) {
+            font-size: 16 * $size-430-1px;
+            font-family: Noto Sans;
+            font-weight: 500;
+            text-align: left;
+          }
+        }
       }
     }
   }
